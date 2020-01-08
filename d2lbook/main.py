@@ -10,6 +10,7 @@ logging.getLogger().setLevel(logging.INFO)
 
 
 def main():
+    print("Tiep")
     commands = {'build': build, 'deploy':deploy, 'clear':clear}
     parser = argparse.ArgumentParser(description='''
 D2L Book: Publish a book based on Jupyter notebooks.
