@@ -37,6 +37,9 @@ def build():
     for cmd in args.commands:
         getattr(builder, cmd)()
 
+# def mybuild(command):
+
+
 class Builder(object):
     def __init__(self, config):
         self.config = config
