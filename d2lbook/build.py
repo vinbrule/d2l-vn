@@ -199,7 +199,6 @@ class Builder(object):
     @_once
     def html(self):
         self.rst()
-        __import__('pdb').set_trace()
         self.colab()
         self.sagemaker()
         run_cmd(['sphinx-build', self.config.rst_dir, self.config.html_dir,

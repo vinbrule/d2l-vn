@@ -8,9 +8,7 @@
 
 ```toc
 :maxdepth: 1
-
-intro_vn
-chapter_preface/index_vn
+test
 chapter_install/index_vn
 ```
 
