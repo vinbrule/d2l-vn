@@ -201,7 +201,7 @@ const messages = {
   }
 }
 
-let locale = 'en'
+let locale = 'de'
 if( document.documentElement.lang !== undefined
     && messages[document.documentElement.lang] !== undefined ) {
   locale = document.documentElement.lang

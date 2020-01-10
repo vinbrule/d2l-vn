@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <title>Introduction &#8212; Đắm mình vào Học Sâu 0.7.0 documentation</title>
+
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/d2l.css" />
+    <link rel="stylesheet" href="../_static/material-design-lite-1.3.0/material.blue-deep_orange.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx_materialdesign_theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fontawesome/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/d2l.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+  </head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer"><header class="mdl-layout__header mdl-layout__header--waterfall ">
+    <div class="mdl-layout__header-row">
+        
+        <nav class="mdl-navigation breadcrumb">
+            <a class="mdl-navigation__link is-active">Introduction</a>
+        </nav>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+        
+<form class="form-inline pull-sm-right" action="../search.html" method="get">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+        <label id="quick-search-icon" class="mdl-button mdl-js-button mdl-button--icon"  for="waterfall-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="q"  id="waterfall-exp" placeholder="Search" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </div>
+      </div>
+      <div class="mdl-tooltip" data-mdl-for="quick-search-icon">
+      Quick search
+      </div>
+</form>
+        
+<a id="button-show-source"
+    class="mdl-button mdl-js-button mdl-button--icon"
+    href="../_sources/chapter_introduction/index.rst.txt" rel="nofollow">
+  <i class="material-icons">code</i>
+</a>
+<div class="mdl-tooltip" data-mdl-for="button-show-source">
+Show Source
+</div>
+        </nav>
+    </div>
+    <div class="mdl-layout__header-row header-links">
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation">
+          
+              <a  class="mdl-navigation__link" href="https://github.com/aivivn/d2l-vn">
+                  <i class="fab fa-github"></i>
+                  GitHub
+              </a>
+          
+              <a  class="mdl-navigation__link" href="https://www.d2l.ai/">
+                  <i class="fas fa-external-link-alt"></i>
+                  English
+              </a>
+      </nav>
+    </div>
+</header><header class="mdl-layout__drawer">
+    
+          <!-- Title -->
+      <span class="mdl-layout-title">
+          <a class="title" href="../index.html">
+              <span class="title-text">
+                  Đắm mình vào Học Sâu
+              </span>
+          </a>
+      </span>
+    
+    
+      <div class="globaltoc">
+        <span class="mdl-layout-title toc">Table Of Contents</span>
+        
+        
+            
+            <nav class="mdl-navigation">
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="index_vn.html">1. Giới thiệu</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_references/zreferences.html">Tài liệu tham khảo</a></li>
+</ul>
+
+            </nav>
+        
+        </div>
+    
+</header>
+        <main class="mdl-layout__content" tabIndex="0">
+
+	<script type="text/javascript" src="../_static/sphinx_materialdesign_theme.js "></script>
+    <header class="mdl-layout__drawer">
+    
+          <!-- Title -->
+      <span class="mdl-layout-title">
+          <a class="title" href="../index.html">
+              <span class="title-text">
+                  Đắm mình vào Học Sâu
+              </span>
+          </a>
+      </span>
+    
+    
+      <div class="globaltoc">
+        <span class="mdl-layout-title toc">Table Of Contents</span>
+        
+        
+            
+            <nav class="mdl-navigation">
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="index_vn.html">1. Giới thiệu</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chapter_references/zreferences.html">Tài liệu tham khảo</a></li>
+</ul>
+
+            </nav>
+        
+        </div>
+    
+</header>
+
+    <div class="document">
+        <div class="page-content" role="main">
+        
+  <div class="section" id="introduction">
+<span id="chap-introduction"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>Until recently, nearly every computer program that interact with daily
+were coded by software developers from first principles. Say that we
+wanted to write an application to manage an e-commerce platform. After
+huddling around a whiteboard for a few hours to ponder the problem, we
+would come up with the broad strokes of a working solution that might
+probably look something like this: (i) users interact with the
+application through an interface running in a web browser or mobile
+application; (ii) our application interacts with a commercial-grade
+database engine to keep track of each user’s state and maintain records
+of historical transactions; and (iii) at the heart of our application,
+the <em>business logic</em> (you might say, the <em>brains</em>) of our application
+spells out in methodical detail the appropriate action that our program
+should take in every conceivable circumstance.</p>
+<p>To build the <em>brains</em> of our application, we’d have to step through
+every possible corner case that we anticipate encountering, devising
+appropriate rules. Each time a customer clicks to add an item to their
+shopping cart, we add an entry to the shopping cart database table,
+associating that user’s ID with the requested product’s ID. While few
+developers ever get it completely right the first time (it might take
+some test runs to work out the kinks), for the most part, we could write
+such a program from first principles and confidently launch it <em>before
+ever seeing a real customer</em>. Our ability to design automated systems
+from first principles that drive functioning products and systems, often
+in novel situations, is a remarkable cognitive feat. And when you are
+able to devise solutions that work <span class="math notranslate nohighlight">\(100\%\)</span> of the time, <em>you
+should not be using machine learning</em>.</p>
+<p>Fortunately for the growing community of ML scientists, many tasks that
+we would like to automate do not bend so easily to human ingenuity.
+Imagine huddling around the whiteboard with the smartest minds you know,
+but this time you are tackling one of the following problems:</p>
+<ul class="simple">
+<li><p>Write a program that predicts tomorrow’s weather given geographic
+information, satellite images, and a trailing window of past weather.</p></li>
+<li><p>Write a program that takes in a question, expressed in free-form
+text, and answers it correctly.</p></li>
+<li><p>Write a program that given an image can identify all the people it
+contains, drawing outlines around each.</p></li>
+<li><p>Write a program that presents users with products that they are
+likely to enjoy but unlikely, in the natural course of browsing, to
+encounter.</p></li>
+</ul>
+<p>In each of these cases, even elite programmers are incapable of coding
+up solutions from scratch. The reasons for this can vary. Sometimes the
+program that we are looking for follows a pattern that changes over
+time, and we need our programs to adapt. In other cases, the
+relationship (say between pixels, and abstract categories) may be too
+complicated, requiring thousands or millions of computations that are
+beyond our conscious understanding (even if our eyes manage the task
+effortlessly). Machine learning (ML) is the study of powerful techniques
+that can <em>learn</em> from <em>experience</em>. As ML algorithm accumulates more
+experience, typically in the form of observational data or interactions
+with an environment, their performance improves. Contrast this with our
+deterministic e-commerce platform, which performs according to the same
+business logic, no matter how much experience accrues, until the
+developers themselves <em>learn</em> and decide that it is time to update the
+software. In this book, we will teach you the fundamentals of machine
+learning, and focus in particular on deep learning, a powerful set of
+techniques driving innovations in areas as diverse as computer vision,
+natural language processing, healthcare, and genomics.</p>
+<div class="section" id="a-motivating-example">
+<h2>A Motivating Example<a class="headerlink" href="#a-motivating-example" title="Permalink to this headline">¶</a></h2>
+<p>Before we could begin writing, the authors of this book, like much of
+the work force, had to become caffeinated. We hopped in the car and
+started driving. Using an iPhone, Alex called out “Hey Siri”, awakening
+the phone’s voice recognition system. Then Mu commanded “directions to
+Blue Bottle coffee shop”. The phone quickly displayed the transcription
+of his command. It also recognized that we were asking for directions
+and launched the Maps application to fulfill our request. Once launched,
+the Maps app identified a number of routes. Next to each route, the
+phone displayed a predicted transit time. While we fabricated this story
+for pedagogical convenience, it demonstrates that in the span of just a
+few seconds, our everyday interactions with a smart phone can engage
+several machine learning models.</p>
+<p>Imagine just writing a program to respond to a <em>wake word</em> like “Alexa”,
+“Okay, Google” or “Siri”. Try coding it up in a room by yourself with
+nothing but a computer and a code editor, as illustrated in
+<a class="reference internal" href="index_vn.html#fig-wake-word"><span class="std std-numref">Fig. 1.1.1</span></a>. How would you write such a program from first
+principles? Think about it… the problem is hard. Every second, the
+microphone will collect roughly 44,000 samples. Each sample is a
+measurement of the amplitude of the sound wave. What rule could map
+reliably from a snippet of raw audio to confident predictions
+<code class="docutils literal notranslate"><span class="pre">{yes,</span> <span class="pre">no}</span></code> on whether the snippet contains the wake word? If you are
+stuck, do not worry. We do not know how to write such a program from
+scratch either. That is why we use ML.</p>
+<div class="figure align-default" id="id24">
+<span id="fig-wake-word"></span><img alt="../_images/wake-word.svg" src="../_images/wake-word.svg" /><p class="caption"><span class="caption-text">Identify an awake word.</span><a class="headerlink" href="#id24" title="Permalink to this image">¶</a></p>
+</div>
+<p>Here’s the trick. Often, even when we do not know how to tell a computer
+explicitly how to map from inputs to outputs, we are nonetheless capable
+of performing the cognitive feat ourselves. In other words, even if you
+do not know <em>how to program a computer</em> to recognize the word “Alexa”,
+you yourself <em>are able</em> to recognize the word “Alexa”. Armed with this
+ability, we can collect a huge <em>dataset</em> containing examples of audio
+and label those that <em>do</em> and that <em>do not</em> contain the wake word. In
+the ML approach, we do not attempt to design a system <em>explicitly</em> to
+recognize wake words. Instead, we define a flexible program whose
+behavior is determined by a number of <em>parameters</em>. Then we use the
+dataset to determine the best possible set of parameters, those that
+improve the performance of our program with respect to some measure of
+performance on the task of interest.</p>
+<p>You can think of the parameters as knobs that we can turn, manipulating
+the behavior of the program. Fixing the parameters, we call the program
+a <em>model</em>. The set of all distinct programs (input-output mappings) that
+we can produce just by manipulating the parameters is called a <em>family</em>
+of models. And the <em>meta-program</em> that uses our dataset to choose the
+parameters is called a <em>learning algorithm</em>.</p>
+<p>Before we can go ahead and engage the learning algorithm, we have to
+define the problem precisely, pinning down the exact nature of the
+inputs and outputs, and choosing an appropriate model family. In this
+case, our model receives a snippet of audio as <em>input</em>, and it generates
+a selection among <code class="docutils literal notranslate"><span class="pre">{yes,</span> <span class="pre">no}</span></code> as <em>output</em>. If all goes according to
+plan the model’s guesses will typically be correct as to whether (or
+not) the snippet contains the wake word.</p>
+<p>If we choose the right family of models, then there should exist one
+setting of the knobs such that the model fires <code class="docutils literal notranslate"><span class="pre">yes</span></code> every time it
+hears the word “Alexa”. Because the exact choice of the wake word is
+arbitrary, we will probably need a model family sufficiently rich that,
+via another setting of the knobs, it could fire <code class="docutils literal notranslate"><span class="pre">yes</span></code> only upon
+hearing the word “Apricot”. We expect that the same model family should
+be suitable for <em>“Alexa” recognition</em> and <em>“Apricot” recognition</em>
+because they seem, intuitively, to be similar tasks. However, we might
+need a different family of models entirely if we want to deal with
+fundamentally different inputs or outputs, say if we wanted to map from
+images to captions, or from English sentences to Chinese sentences.</p>
+<p>As you might guess, if we just set all of the knobs randomly, it is not
+likely that our model will recognize “Alexa”, “Apricot”, or any other
+English word. In deep learning, the <em>learning</em> is the process by which
+we discover the right setting of the knobs coercing the desired behavior
+from our model.</p>
+<p>As shown in <a class="reference internal" href="index_vn.html#fig-ml-loop"><span class="std std-numref">Fig. 1.1.2</span></a>, the training process usually looks
+like this:</p>
+<ol class="arabic simple">
+<li><p>Start off with a randomly initialized model that cannot do anything
+useful.</p></li>
+<li><p>Grab some of your labeled data (e.g., audio snippets and
+corresponding <code class="docutils literal notranslate"><span class="pre">{yes,</span> <span class="pre">no}</span></code> labels)</p></li>
+<li><p>Tweak the knobs so the model sucks less with respect to those
+examples</p></li>
+<li><p>Repeat until the model is awesome.</p></li>
+</ol>
+<div class="figure align-default" id="id25">
+<span id="fig-ml-loop"></span><img alt="../_images/ml-loop.svg" src="../_images/ml-loop.svg" /><p class="caption"><span class="caption-text">A typical training process.</span><a class="headerlink" href="#id25" title="Permalink to this image">¶</a></p>
+</div>
+<p>To summarize, rather than code up a wake word recognizer, we code up a
+program that can <em>learn</em> to recognize wake words, <em>if we present it with
+a large labeled dataset</em>. You can think of this act of determining a
+program’s behavior by presenting it with a dataset as <em>programming with
+data</em>. We can “program” a cat detector by providing our machine learning
+system with many examples of cats and dogs, such as the images below:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><img alt="cat1" src="../_images/cat1.png" /></p></th>
+<th class="head"><p><img alt="cat2" src="../_images/cat2.jpg" /></p></th>
+<th class="head"><p><img alt="dog1" src="../_images/dog1.jpg" /></p></th>
+<th class="head"><p><img alt="dog2" src="../_images/dog2.jpg" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>cat</p></td>
+<td><p>cat</p></td>
+<td><p>dog</p></td>
+<td><p>dog</p></td>
+</tr>
+</tbody>
+</table>
+<p>This way the detector will eventually learn to emit a very large
+positive number if it is a cat, a very large negative number if it is a
+dog, and something closer to zero if it is not sure, and this barely
+scratches the surface of what ML can do.</p>
+<p>Deep learning is just one among many popular methods for solving machine
+learning problems. Thus far, we have only talked about machine learning
+broadly and not deep learning. To see why deep learning is important, we
+should pause for a moment to highlight a couple crucial points.</p>
+<p>First, the problems that we have discussed thus far—learning from raw
+audio signal, the raw pixel values of images, or mapping between
+sentences of arbitrary lengths and their counterparts in foreign
+languages—are problems where deep learning excels and where traditional
+ML methods faltered. Deep models are <em>deep</em> in precisely the sense that
+they learn many <em>layers</em> of computation. It turns out that these
+many-layered (or hierarchical) models are capable of addressing
+low-level perceptual data in a way that previous tools could not. In
+bygone days, the crucial part of applying ML to these problems consisted
+of coming up with manually-engineered ways of transforming the data into
+some form amenable to <em>shallow</em> models. One key advantage of deep
+learning is that it replaces not only the <em>shallow</em> models at the end of
+traditional learning pipelines, but also the labor-intensive process of
+feature engineering. Second, by replacing much of the <em>domain-specific
+preprocessing</em>, deep learning has eliminated many of the boundaries that
+previously separated computer vision, speech recognition, natural
+language processing, medical informatics, and other application areas,
+offering a unified set of tools for tackling diverse problems.</p>
+</div>
+<div class="section" id="the-key-components-data-models-and-algorithms">
+<h2>The Key Components: Data, Models, and Algorithms<a class="headerlink" href="#the-key-components-data-models-and-algorithms" title="Permalink to this headline">¶</a></h2>
+<p>In our <em>wake-word</em> example, we described a dataset consisting of audio
+snippets and binary labels gave a hand-wavy sense of how we might
+<em>train</em> a model to approximate a mapping from snippets to
+classifications. This sort of problem, where we try to predict a
+designated unknown <em>label</em> given known <em>inputs</em>, given a dataset
+consisting of examples, for which the labels are known is called
+<em>supervised learning</em>, and it is just one among many <em>kinds</em> of machine
+learning problems. In the next section, we will take a deep dive into
+the different ML problems. First, we’d like to shed more light on some
+core components that will follow us around, no matter what kind of ML
+problem we take on:</p>
+<ol class="arabic simple">
+<li><p>The <em>data</em> that we can learn from.</p></li>
+<li><p>A <em>model</em> of how to transform the data.</p></li>
+<li><p>A <em>loss</em> function that quantifies the <em>badness</em> of our model.</p></li>
+<li><p>An <em>algorithm</em> to adjust the model’s parameters to minimize the loss.</p></li>
+</ol>
+<div class="section" id="data">
+<h3>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h3>
+<p>It might go without saying that you cannot do data science without data.
+We could lose hundreds of pages pondering what precisely constitutes
+data, but for now we will err on the practical side and focus on the key
+properties to be concerned with. Generally we are concerned with a
+collection of <em>examples</em> (also called <em>data points</em>, <em>samples</em>, or
+<em>instances</em>). In order to work with data usefully, we typically need to
+come up with a suitable numerical representation. Each <em>example</em>
+typically consists of a collection of numerical attributes called
+<em>features</em>. In the supervised learning problems above, a special feature
+is designated as the prediction <em>target</em>, (sometimes called the <em>label</em>
+or <em>dependent variable</em>). The given features from which the model must
+make its predictions can then simply be called the <em>features</em>, (or
+often, the <em>inputs</em>, <em>covariates</em>, or <em>independent variables</em>).</p>
+<p>If we were working with image data, each individual photograph might
+constitute an <em>example</em>, each represented by an ordered list of
+numerical values corresponding to the brightness of each pixel. A
+<span class="math notranslate nohighlight">\(200\times 200\)</span> color photograph would consist of
+<span class="math notranslate nohighlight">\(200\times200\times3=120000\)</span> numerical values, corresponding to
+the brightness of the red, green, and blue channels for each spatial
+location. In a more traditional task, we might try to predict whether or
+not a patient will survive, given a standard set of features such as
+age, vital signs, diagnoses, etc.</p>
+<p>When every example is characterized by the same number of numerical
+values, we say that the data consists of <em>fixed-length</em> vectors and we
+describe the (constant) length of the vectors as the <em>dimensionality</em> of
+the data. As you might imagine, fixed length can be a convenient
+property. If we wanted to train a model to recognize cancer in
+microscopy images, fixed-length inputs means we have one less thing to
+worry about.</p>
+<p>However, not all data can easily be represented as fixed length vectors.
+While we might expect microscope images to come from standard equipment,
+we cannot expect images mined from the Internet to all show up with the
+same resolution or shape. For images, we might consider cropping them
+all to a standard size, but that strategy only gets us so far. We risk
+losing information in the cropped out portions. Moreover, text data
+resists fixed-length representations even more stubbornly. Consider the
+customer reviews left on e-commerce sites like Amazon, IMDB, or
+TripAdvisor. Some are short: “it stinks!”. Others ramble for pages. One
+major advantage of deep learning over traditional methods is the
+comparative grace with which modern models can handle <em>varying-length</em>
+data.</p>
+<p>Generally, the more data we have, the easier our job becomes. When we
+have more data, we can train more powerful models, and rely less heavily
+on pre-conceived assumptions. The regime change from (comparatively
+small) to big data is a major contributor to the success of modern deep
+learning. To drive the point home, many of the most exciting models in
+deep learning either do not work without large datasets. Some others
+work in the low-data regime, but no better than traditional approaches.</p>
+<p>Finally it is not enough to have lots of data and to process it
+cleverly. We need the <em>right</em> data. If the data is full of mistakes, or
+if the chosen features are not predictive of the target quantity of
+interest, learning is going to fail. The situation is captured well by
+the cliché: <em>garbage in, garbage out</em>. Moreover, poor predictive
+performance is not the only potential consequence. In sensitive
+applications of machine learning, like predictive policing, resumé
+screening, and risk models used for lending, we must be especially alert
+to the consequences of garbage data. One common failure mode occurs in
+datasets where some groups of people are unrepresented in the training
+data. Imagine applying a skin cancer recognition system in the wild that
+had never seen black skin before. Failure can also occur when the data
+does not merely under-represent some groups, but reflects societal
+prejudices. For example if past hiring decisions are used to train a
+predictive model that will be used to screen resumes, then machine
+learning models could inadvertently capture and automate historical
+injustices. Note that this can all happen without the data scientist
+actively conspiring, or even being aware.</p>
+</div>
+<div class="section" id="models">
+<h3>Models<a class="headerlink" href="#models" title="Permalink to this headline">¶</a></h3>
+<p>Most machine learning involves <em>transforming</em> the data in some sense. We
+might want to build a system that ingests photos and predicts
+<em>smiley-ness</em>. Alternatively, we might want to ingest a set of sensor
+readings and predict how <em>normal</em> vs <em>anomalous</em> the readings are. By
+<em>model</em>, we denote the computational machinery for ingesting data of one
+type, and spitting out predictions of a possibly different type. In
+particular, we are interested in statistical models that can be
+estimated from data. While simple models are perfectly capable of
+addressing appropriately simple problems the problems that we focus on
+in this book stretch the limits of classical methods. Deep learning is
+differentiated from classical approaches principally by the set of
+powerful models that it focuses on. These models consist of many
+successive transformations of the data that are chained together top to
+bottom, thus the name <em>deep learning</em>. On our way to discussing deep
+neural networks, we will discuss some more traditional methods.</p>
+</div>
+<div class="section" id="objective-functions">
+<h3>Objective functions<a class="headerlink" href="#objective-functions" title="Permalink to this headline">¶</a></h3>
+<p>Earlier, we introduced machine learning as “learning from experience”.
+By <em>learning</em> here, we mean <em>improving</em> at some task over time. But who
+is to say what constitutes an improvement? You might imagine that we
+could propose to update our model, and some people might disagree on
+whether the proposed update constituted an improvement or a decline.</p>
+<p>In order to develop a formal mathematical system of learning machines,
+we need to have formal measures of how good (or bad) our models are. In
+machine learning, and optimization more generally, we call these
+objective functions. By convention, we usually define objective
+functions so that <em>lower</em> is <em>better</em>. This is merely a convention. You
+can take any function <span class="math notranslate nohighlight">\(f\)</span> for which higher is better, and turn it
+into a new function <span class="math notranslate nohighlight">\(f'\)</span> that is qualitatively identical but for
+which lower is better by setting <span class="math notranslate nohighlight">\(f' = -f\)</span>. Because lower is
+better, these functions are sometimes called <em>loss functions</em> or <em>cost
+functions</em>.</p>
+<p>When trying to predict numerical values, the most common objective
+function is squared error <span class="math notranslate nohighlight">\((y-\hat{y})^2\)</span>. For classification, the
+most common objective is to minimize error rate, i.e., the fraction of
+instances on which our predictions disagree with the ground truth. Some
+objectives (like squared error) are easy to optimize. Others (like error
+rate) are difficult to optimize directly, owing to non-differentiability
+or other complications. In these cases, it is common to optimize a
+<em>surrogate objective</em>.</p>
+<p>Typically, the loss function is defined with respect to the model’s
+parameters and depends upon the dataset. The best values of our model’s
+parameters are learned by minimizing the loss incurred on a <em>training
+set</em> consisting of some number of <em>examples</em> collected for training.
+However, doing well on the training data does not guarantee that we will
+do well on (unseen) test data. So we will typically want to split the
+available data into two partitions: the training data (for fitting model
+parameters) and the test data (which is held out for evaluation),
+reporting the following two quantities:</p>
+<ul class="simple">
+<li><p><strong>Training Error:</strong> The error on that data on which the model was
+trained. You could think of this as being like a student’s scores on
+practice exams used to prepare for some real exam. Even if the
+results are encouraging, that does not guarantee success on the final
+exam.</p></li>
+<li><p><strong>Test Error:</strong> This is the error incurred on an unseen test set.
+This can deviate significantly from the training error. When a model
+performs well on the training data but fails to generalize to unseen
+data, we say that it is <em>overfitting</em>. In real-life terms, this is
+like flunking the real exam despite doing well on practice exams.</p></li>
+</ul>
+</div>
+<div class="section" id="optimization-algorithms">
+<h3>Optimization algorithms<a class="headerlink" href="#optimization-algorithms" title="Permalink to this headline">¶</a></h3>
+<p>Once we have got some data source and representation, a model, and a
+well-defined objective function, we need an algorithm capable of
+searching for the best possible parameters for minimizing the loss
+function. The most popular optimization algorithms for neural networks
+follow an approach called gradient descent. In short, at each step, they
+check to see, for each parameter, which way the training set loss would
+move if you perturbed that parameter just a small amount. They then
+update the parameter in the direction that reduces the loss.</p>
+</div>
+</div>
+<div class="section" id="kinds-of-machine-learning">
+<h2>Kinds of Machine Learning<a class="headerlink" href="#kinds-of-machine-learning" title="Permalink to this headline">¶</a></h2>
+<p>In the following sections, we discuss a few <em>kinds</em> of machine learning
+problems in greater detail. We begin with a list of <em>objectives</em>, i.e.,
+a list of things that we would like machine learning to do. Note that
+the objectives are complemented with a set of techniques of <em>how</em> to
+accomplish them, including types of data, models, training techniques,
+etc. The list below is just a sampling of the problems ML can tackle to
+motivate the reader and provide us with some common language for when we
+talk about more problems throughout the book.</p>
+<div class="section" id="supervised-learning">
+<h3>Supervised learning<a class="headerlink" href="#supervised-learning" title="Permalink to this headline">¶</a></h3>
+<p>Supervised learning addresses the task of predicting <em>targets</em> given
+<em>inputs</em>. The targets, which we often call <em>labels</em>, are generally
+denoted by <em>y</em>. The input data, also called the <em>features</em> or
+covariates, are typically denoted <span class="math notranslate nohighlight">\(\mathbf{x}\)</span>. Each (input,
+target) pair is called an <em>examples</em> or an <em>instances</em>. Some times, when
+the context is clear, we may use the term examples, to refer to a
+collection of inputs, even when the corresponding targets are unknown.
+We denote any particular instance with a subscript, typically <span class="math notranslate nohighlight">\(i\)</span>,
+for instance (<span class="math notranslate nohighlight">\(\mathbf{x}_i, y_i\)</span>). A dataset is a collection of
+<span class="math notranslate nohighlight">\(n\)</span> instances <span class="math notranslate nohighlight">\(\{\mathbf{x}_i, y_i\}_{i=1}^n\)</span>. Our goal is
+to produce a model <span class="math notranslate nohighlight">\(f_\theta\)</span> that maps any input
+<span class="math notranslate nohighlight">\(\mathbf{x}_i\)</span> to a prediction <span class="math notranslate nohighlight">\(f_{\theta}(\mathbf{x}_i)\)</span>.</p>
+<p>To ground this description in a concrete example, if we were working in
+healthcare, then we might want to predict whether or not a patient would
+have a heart attack. This observation, <em>heart attack</em> or <em>no heart
+attack</em>, would be our label <span class="math notranslate nohighlight">\(y\)</span>. The input data <span class="math notranslate nohighlight">\(\mathbf{x}\)</span>
+might be vital signs such as heart rate, diastolic and systolic blood
+pressure, etc.</p>
+<p>The supervision comes into play because for choosing the parameters
+<span class="math notranslate nohighlight">\(\theta\)</span>, we (the supervisors) provide the model with a dataset
+consisting of <em>labeled examples</em> (<span class="math notranslate nohighlight">\(\mathbf{x}_i, y_i\)</span>), where each
+example <span class="math notranslate nohighlight">\(\mathbf{x}_i\)</span> is matched with the correct label.</p>
+<p>In probabilistic terms, we typically are interested in estimating the
+conditional probability <span class="math notranslate nohighlight">\(P(y|x)\)</span>. While it is just one among
+several paradigms within machine learning, supervised learning accounts
+for the majority of successful applications of machine learning in
+industry. Partly, that is because many important tasks can be described
+crisply as estimating the probability of something unknown given a
+particular set of available data:</p>
+<ul class="simple">
+<li><p>Predict cancer vs not cancer, given a CT image.</p></li>
+<li><p>Predict the correct translation in French, given a sentence in
+English.</p></li>
+<li><p>Predict the price of a stock next month based on this month’s
+financial reporting data.</p></li>
+</ul>
+<p>Even with the simple description “predict targets from inputs”
+supervised learning can take a great many forms and require a great many
+modeling decisions, depending on (among other considerations) the type,
+size, and the number of inputs and outputs. For example, we use
+different models to process sequences (like strings of text or time
+series data) and for processing fixed-length vector representations. We
+will visit many of these problems in depth throughout the first 9 parts
+of this book.</p>
+<p>Informally, the learning process looks something like this: Grab a big
+collection of examples for which the covariates are known and select
+from them a random subset, acquiring the ground truth labels for each.
+Sometimes these labels might be available data that has already been
+collected (e.g., did a patient die within the following year?) and other
+times we might need to employ human annotators to label the data, (e.g.,
+assigning images to categories).</p>
+<p>Together, these inputs and corresponding labels comprise the training
+set. We feed the training dataset into a supervised learning algorithm,
+a function that takes as input a dataset and outputs another function,
+<em>the learned model</em>. Finally, we can feed previously unseen inputs to
+the learned model, using its outputs as predictions of the corresponding
+label. The full process in drawn in <a class="reference internal" href="index_vn.html#fig-supervised-learning"><span class="std std-numref">Fig. 1.3.1</span></a>.</p>
+<div class="figure align-default" id="id26">
+<span id="fig-supervised-learning"></span><img alt="../_images/supervised-learning.svg" src="../_images/supervised-learning.svg" /><p class="caption"><span class="caption-text">Supervised learning.</span><a class="headerlink" href="#id26" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="regression">
+<h4>Regression<a class="headerlink" href="#regression" title="Permalink to this headline">¶</a></h4>
+<p>Perhaps the simplest supervised learning task to wrap your head around
+is <em>regression</em>. Consider, for example a set of data harvested from a
+database of home sales. We might construct a table, where each row
+corresponds to a different house, and each column corresponds to some
+relevant attribute, such as the square footage of a house, the number of
+bedrooms, the number of bathrooms, and the number of minutes (walking)
+to the center of town. In this dataset each <em>example</em> would be a
+specific house, and the corresponding <em>feature vector</em> would be one row
+in the table.</p>
+<p>If you live in New York or San Francisco, and you are not the CEO of
+Amazon, Google, Microsoft, or Facebook, the (sq. footage, no. of
+bedrooms, no. of bathrooms, walking distance) feature vector for your
+home might look something like: <span class="math notranslate nohighlight">\([100, 0, .5, 60]\)</span>. However, if
+you live in Pittsburgh, it might look more like
+<span class="math notranslate nohighlight">\([3000, 4, 3, 10]\)</span>. Feature vectors like this are essential for
+most classic machine learning algorithms. We will continue to denote the
+feature vector correspond to any example <span class="math notranslate nohighlight">\(i\)</span> as
+<span class="math notranslate nohighlight">\(\mathbf{x}_i\)</span> and we can compactly refer to the full table
+containing all of the feature vectors as <span class="math notranslate nohighlight">\(X\)</span>.</p>
+<p>What makes a problem a <em>regression</em> is actually the outputs. Say that
+you are in the market for a new home. You might want to estimate the
+fair market value of a house, given some features like these. The target
+value, the price of sale, is a <em>real number</em>. If you remember the formal
+definition of the reals you might be scratching your head now. Homes
+probably never sell for fractions of a cent, let alone prices expressed
+as irrational numbers. In cases like this, when the target is actually
+discrete, but where the rounding takes place on a sufficiently fine
+scale, we will abuse language just a bit cn continue to describe our
+outputs and targets as real-valued numbers.</p>
+<p>We denote any individual target <span class="math notranslate nohighlight">\(y_i\)</span> (corresponding to example
+<span class="math notranslate nohighlight">\(\mathbf{x_i}\)</span>) and the set of all targets <span class="math notranslate nohighlight">\(\mathbf{y}\)</span>
+(corresponding to all examples <span class="math notranslate nohighlight">\(X\)</span>). When our targets take on
+arbitrary values in some range, we call this a regression problem. Our
+goal is to produce a model whose predictions closely approximate the
+actual target values. We denote the predicted target for any instance
+<span class="math notranslate nohighlight">\(\hat{y}_i\)</span>. Do not worry if the notation is bogging you down. We
+will unpack it more thoroughly in the subsequent chapters.</p>
+<p>Lots of practical problems are well-described regression problems.
+Predicting the rating that a user will assign to a movie can be thought
+of as a regression problem and if you designed a great algorithm to
+accomplish this feat in 2009, you might have won the <a class="reference external" href="https://en.wikipedia.org/wiki/Netflix_Prize">1-million-dollar
+Netflix prize</a>.
+Predicting the length of stay for patients in the hospital is also a
+regression problem. A good rule of thumb is that any <em>How much?</em> or <em>How
+many?</em> problem should suggest regression.</p>
+<ul class="simple">
+<li><p>“How many hours will this surgery take?”: <em>regression</em></p></li>
+<li><p>“How many dogs are in this photo?”: <em>regression</em>.</p></li>
+</ul>
+<p>However, if you can easily pose your problem as “Is this a _ ?”, then
+it is likely, classification, a different kind of supervised problem
+that we will cover next. Even if you have never worked with machine
+learning before, you have probably worked through a regression problem
+informally. Imagine, for example, that you had your drains repaired and
+that your contractor spent <span class="math notranslate nohighlight">\(x_1=3\)</span> hours removing gunk from your
+sewage pipes. Then she sent you a bill of <span class="math notranslate nohighlight">\(y_1 = \$350\)</span>. Now
+imagine that your friend hired the same contractor for <span class="math notranslate nohighlight">\(x_2 = 2\)</span>
+hours and that she received a bill of <span class="math notranslate nohighlight">\(y_2 = \$250\)</span>. If someone
+then asked you how much to expect on their upcoming gunk-removal invoice
+you might make some reasonable assumptions, such as more hours worked
+costs more dollars. You might also assume that there is some base charge
+and that the contractor then charges per hour. If these assumptions held
+true, then given these two data points, you could already identify the
+contractor’s pricing structure: $100 per hour plus $50 to show up at
+your house. If you followed that much then you already understand the
+high-level idea behind linear regression (and you just implicitly
+designed a linear model with a bias term).</p>
+<p>In this case, we could produce the parameters that exactly matched the
+contractor’s prices. Sometimes that is not possible, e.g., if some of
+the variance owes to some factors besides your two features. In these
+cases, we will try to learn models that minimize the distance between
+our predictions and the observed values. In most of our chapters, we
+will focus on one of two very common losses, the <a class="reference external" href="http://mxnet.incubator.apache.org/api/python/gluon/loss.html#mxnet.gluon.loss.L1Loss">L1
+loss</a>
+where</p>
+<div class="math notranslate nohighlight" id="equation-chapter-introduction-index-0">
+<span class="eqno">()<a class="headerlink" href="#equation-chapter-introduction-index-0" title="Permalink to this equation">¶</a></span>\[l(y, y') = \sum_i |y_i-y_i'|\]</div>
+<p>and the least mean squares loss, or <a class="reference external" href="http://mxnet.incubator.apache.org/api/python/gluon/loss.html#mxnet.gluon.loss.L2Loss">L2
+loss</a>,
+where</p>
+<div class="math notranslate nohighlight" id="equation-chapter-introduction-index-1">
+<span class="eqno">()<a class="headerlink" href="#equation-chapter-introduction-index-1" title="Permalink to this equation">¶</a></span>\[l(y, y') = \sum_i (y_i - y_i')^2.\]</div>
+<p>As we will see later, the <span class="math notranslate nohighlight">\(L_2\)</span> loss corresponds to the assumption
+that our data was corrupted by Gaussian noise, whereas the <span class="math notranslate nohighlight">\(L_1\)</span>
+loss corresponds to an assumption of noise from a Laplace distribution.</p>
+</div>
+<div class="section" id="classification">
+<h4>Classification<a class="headerlink" href="#classification" title="Permalink to this headline">¶</a></h4>
+<p>While regression models are great for addressing <em>how many?</em> questions,
+lots of problems do not bend comfortably to this template. For example,
+a bank wants to add check scanning to their mobile app. This would
+involve the customer snapping a photo of a check with their smart
+phone’s camera and the machine learning model would need to be able to
+automatically understand text seen in the image. It would also need to
+understand hand-written text to be even more robust. This kind of system
+is referred to as optical character recognition (OCR), and the kind of
+problem it addresses is called <em>classification</em>. It is treated with a
+different set of algorithms than those used for regression (although
+many techniques will carry over).</p>
+<p>In classification, we want our model to look at a feature vector, e.g.,
+the pixel values in an image, and then predict which category (formally
+called <em>classes</em>), among some (discrete) set of options, an example
+belongs. For hand-written digits, we might have 10 classes,
+corresponding to the digits 0 through 9. The simplest form of
+classification is when there are only two classes, a problem which we
+call binary classification. For example, our dataset <span class="math notranslate nohighlight">\(X\)</span> could
+consist of images of animals and our <em>labels</em> <span class="math notranslate nohighlight">\(Y\)</span> might be the
+classes <span class="math notranslate nohighlight">\(\mathrm{\{cat, dog\}}\)</span>. While in regression, we sought a
+<em>regressor</em> to output a real value <span class="math notranslate nohighlight">\(\hat{y}\)</span>, in classification,
+we seek a <em>classifier</em>, whose output <span class="math notranslate nohighlight">\(\hat{y}\)</span> is the predicted
+class assignment.</p>
+<p>For reasons that we will get into as the book gets more technical, it
+can be hard to optimize a model that can only output a hard categorical
+assignment, e.g., either <em>cat</em> or <em>dog</em>. In these cases, it is usually
+much easier to instead express our model in the language of
+probabilities. Given an example <span class="math notranslate nohighlight">\(x\)</span>, our model assigns a
+probability <span class="math notranslate nohighlight">\(\hat{y}_k\)</span> to each label <span class="math notranslate nohighlight">\(k\)</span>. Because these are
+probabilities, they need to be positive numbers and add up to <span class="math notranslate nohighlight">\(1\)</span>
+and thus we only need <span class="math notranslate nohighlight">\(K-1\)</span> numbers to assign probabilities of
+<span class="math notranslate nohighlight">\(K\)</span> categories. This is easy to see for binary classification. If
+there is a <span class="math notranslate nohighlight">\(0.6\)</span> (<span class="math notranslate nohighlight">\(60\%\)</span>) probability that an unfair coin
+comes up heads, then there is a <span class="math notranslate nohighlight">\(0.4\)</span> (<span class="math notranslate nohighlight">\(40\%\)</span>) probability
+that it comes up tails. Returning to our animal classification example,
+a classifier might see an image and output the probability that the
+image is a cat <span class="math notranslate nohighlight">\(P(y=\text{cat} \mid x) = 0.9\)</span>. We can interpret
+this number by saying that the classifier is <span class="math notranslate nohighlight">\(90\%\)</span> sure that the
+image depicts a cat. The magnitude of the probability for the predicted
+class conveys one notion of uncertainty. It is not the only notion of
+uncertainty and we will discuss others in more advanced chapters.</p>
+<p>When we have more than two possible classes, we call the problem
+<em>multiclass classification</em>. Common examples include hand-written
+character recognition <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3</span> <span class="pre">...</span> <span class="pre">9,</span> <span class="pre">a,</span> <span class="pre">b,</span> <span class="pre">c,</span> <span class="pre">...]</span></code>. While we
+attacked regression problems by trying to minimize the L1 or L2 loss
+functions, the common loss function for classification problems is
+called cross-entropy. In MXNet Gluon, the corresponding loss function
+can be found
+<a class="reference external" href="https://mxnet.incubator.apache.org/api/python/gluon/loss.html#mxnet.gluon.loss.SoftmaxCrossEntropyLoss">here</a>.</p>
+<p>Note that the most likely class is not necessarily the one that you are
+going to use for your decision. Assume that you find this beautiful
+mushroom in your backyard as shown in <a class="reference internal" href="index_vn.html#fig-death-cap"><span class="std std-numref">Fig. 1.3.2</span></a>.</p>
+<div class="figure align-default" id="id27">
+<span id="fig-death-cap"></span><a class="reference internal image-reference" href="../_images/death_cap.jpg"><img alt="../_images/death_cap.jpg" src="../_images/death_cap.jpg" style="width: 200px;" /></a>
+<p class="caption"><span class="caption-text">Death cap—do not eat!</span><a class="headerlink" href="#id27" title="Permalink to this image">¶</a></p>
+</div>
+<p>Now, assume that you built a classifier and trained it to predict if a
+mushroom is poisonous based on a photograph. Say our poison-detection
+classifier outputs <span class="math notranslate nohighlight">\(P(y=\mathrm{death cap}|\mathrm{image}) = 0.2\)</span>.
+In other words, the classifier is <span class="math notranslate nohighlight">\(80\%\)</span> sure that our mushroom
+<em>is not</em> a death cap. Still, you’d have to be a fool to eat it. That is
+because the certain benefit of a delicious dinner is not worth a
+<span class="math notranslate nohighlight">\(20\%\)</span> risk of dying from it. In other words, the effect of the
+<em>uncertain risk</em> outweighs the benefit by far. We can look at this more
+formally. Basically, we need to compute the expected risk that we incur,
+i.e., we need to multiply the probability of the outcome with the
+benefit (or harm) associated with it:</p>
+<div class="math notranslate nohighlight" id="equation-chapter-introduction-index-2">
+<span class="eqno">()<a class="headerlink" href="#equation-chapter-introduction-index-2" title="Permalink to this equation">¶</a></span>\[L(\mathrm{action}| x) = E_{y \sim p(y| x)}[\mathrm{loss}(\mathrm{action},y)].\]</div>
+<p>Hence, the loss <span class="math notranslate nohighlight">\(L\)</span> incurred by eating the mushroom is
+<span class="math notranslate nohighlight">\(L(a=\mathrm{eat}| x) = 0.2 * \infty + 0.8 * 0 = \infty\)</span>, whereas
+the cost of discarding it is
+<span class="math notranslate nohighlight">\(L(a=\mathrm{discard}| x) = 0.2 * 0 + 0.8 * 1 = 0.8\)</span>.</p>
+<p>Our caution was justified: as any mycologist would tell us, the above
+mushroom actually <em>is</em> a death cap. Classification can get much more
+complicated than just binary, multiclass, or even multi-label
+classification. For instance, there are some variants of classification
+for addressing hierarchies. Hierarchies assume that there exist some
+relationships among the many classes. So not all errors are equal—if we
+must err, we would prefer to misclassify to a related class rather than
+to a distant class. Usually, this is referred to as <em>hierarchical
+classification</em>. One early example is due to
+<a class="reference external" href="https://en.wikipedia.org/wiki/Carl_Linnaeus">Linnaeus</a>, who
+organized the animals in a hierarchy.</p>
+<p>In the case of animal classification, it might not be so bad to mistake
+a poodle for a schnauzer, but our model would pay a huge penalty if it
+confused a poodle for a dinosaur. Which hierarchy is relevant might
+depend on how you plan to use the model. For example, rattle snakes and
+garter snakes might be close on the phylogenetic tree, but mistaking a
+rattler for a garter could be deadly.</p>
+</div>
+<div class="section" id="tagging">
+<h4>Tagging<a class="headerlink" href="#tagging" title="Permalink to this headline">¶</a></h4>
+<p>Some classification problems do not fit neatly into the binary or
+multiclass classification setups. For example, we could train a normal
+binary classifier to distinguish cats from dogs. Given the current state
+of computer vision, we can do this easily, with off-the-shelf tools.
+Nonetheless, no matter how accurate our model gets, we might find
+ourselves in trouble when the classifier encounters an image of the Town
+Musicians of Bremen.</p>
+<div class="figure align-default" id="id28">
+<span id="subsec-recommender-systems"></span><a class="reference internal image-reference" href="../_images/stackedanimals.jpg"><img alt="../_images/stackedanimals.jpg" src="../_images/stackedanimals.jpg" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-text">A cat, a roster, a dog and a donkey</span><a class="headerlink" href="#id28" title="Permalink to this image">¶</a></p>
+</div>
+<p>As you can see, there is a cat in the picture, and a rooster, a dog, a
+donkey and a bird, with some trees in the background. Depending on what
+we want to do with our model ultimately, treating this as a binary
+classification problem might not make a lot of sense. Instead, we might
+want to give the model the option of saying the image depicts a cat
+<em>and</em> a dog <em>and</em> a donkey <em>and</em> a rooster <em>and</em> a bird.</p>
+<p>The problem of learning to predict classes that are <em>not mutually
+exclusive</em> is called multi-label classification. Auto-tagging problems
+are typically best described as multi-label classification problems.
+Think of the tags people might apply to posts on a tech blog, e.g.,
+“machine learning”, “technology”, “gadgets”, “programming languages”,
+“linux”, “cloud computing”, “AWS”. A typical article might have 5-10
+tags applied because these concepts are correlated. Posts about “cloud
+computing” are likely to mention “AWS” and posts about “machine
+learning” could also deal with “programming languages”.</p>
+<p>We also have to deal with this kind of problem when dealing with the
+biomedical literature, where correctly tagging articles is important
+because it allows researchers to do exhaustive reviews of the
+literature. At the National Library of Medicine, a number of
+professional annotators go over each article that gets indexed in PubMed
+to associate it with the relevant terms from MeSH, a collection of
+roughly 28k tags. This is a time-consuming process and the annotators
+typically have a one year lag between archiving and tagging. Machine
+learning can be used here to provide provisional tags until each article
+can have a proper manual review. Indeed, for several years, the BioASQ
+organization has <a class="reference external" href="http://bioasq.org/">hosted a competition</a> to do
+precisely this.</p>
+</div>
+<div class="section" id="search-and-ranking">
+<h4>Search and ranking<a class="headerlink" href="#search-and-ranking" title="Permalink to this headline">¶</a></h4>
+<p>Sometimes we do not just want to assign each example to a bucket or to a
+real value. In the field of information retrieval, we want to impose a
+ranking on a set of items. Take web search for example, the goal is less
+to determine whether a particular page is relevant for a query, but
+rather, which one of the plethora of search results is <em>most relevant</em>
+for a particular user. We really care about the ordering of the relevant
+search results and our learning algorithm needs to produce ordered
+subsets of elements from a larger set. In other words, if we are asked
+to produce the first 5 letters from the alphabet, there is a difference
+between returning <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">B</span> <span class="pre">C</span> <span class="pre">D</span> <span class="pre">E</span></code> and <code class="docutils literal notranslate"><span class="pre">C</span> <span class="pre">A</span> <span class="pre">B</span> <span class="pre">E</span> <span class="pre">D</span></code>. Even if the result
+set is the same, the ordering within the set matters.</p>
+<p>One possible solution to this problem is to first assign to every
+element in the set a corresponding relevance score and then to retrieve
+the top-rated elements.
+<a class="reference external" href="https://en.wikipedia.org/wiki/PageRank">PageRank</a>, the original
+secret sauce behind the Google search engine was an early example of
+such a scoring system but it was peculiar in that it did not depend on
+the actual query. Here they relied on a simple relevance filter to
+identify the set of relevant items and then on PageRank to order those
+results that contained the query term. Nowadays, search engines use
+machine learning and behavioral models to obtain query-dependent
+relevance scores. There are entire academic conferences devoted to this
+subject.</p>
+</div>
+<div class="section" id="recommender-systems">
+<h4>Recommender systems<a class="headerlink" href="#recommender-systems" title="Permalink to this headline">¶</a></h4>
+<p>Recommender systems are another problem setting that is related to
+search and ranking. The problems are similar insofar as the goal is to
+display a set of relevant items to the user. The main difference is the
+emphasis on <em>personalization</em> to specific users in the context of
+recommender systems. For instance, for movie recommendations, the
+results page for a SciFi fan and the results page for a connoisseur of
+Peter Sellers comedies might differ significantly. Similar problems pop
+up in other recommendation settings, e.g., for retail products, music,
+or news recommendation.</p>
+<p>In some cases, customers provide explicit feedback communicating how
+much they liked a particular product (e.g., the product ratings and
+reviews on Amazon, IMDB, GoodReads, etc.). In some other cases, they
+provide implicit feedback, e.g., by skipping titles on a playlist, which
+might indicate dissatisfaction but might just indicate that the song was
+inappropriate in context. In the simplest formulations, these systems
+are trained to estimate some score <span class="math notranslate nohighlight">\(y_{ij}\)</span>, such as an estimated
+rating or the probability of purchase, given a user <span class="math notranslate nohighlight">\(u_i\)</span> and
+product <span class="math notranslate nohighlight">\(p_j\)</span>.</p>
+<p>Given such a model, then for any given user, we could retrieve the set
+of objects with the largest scores <span class="math notranslate nohighlight">\(y_{ij}\)</span>, which are could then
+be recommended to the customer. Production systems are considerably more
+advanced and take detailed user activity and item characteristics into
+account when computing such scores. <a class="reference internal" href="index_vn.html#fig-deeplearning-amazon"><span class="std std-numref">Fig. 1.3.4</span></a>
+is an example of deep learning books recommended by Amazon based on
+personalization algorithms tuned to capture the author’s preferences.</p>
+<div class="figure align-default" id="id29">
+<span id="fig-deeplearning-amazon"></span><img alt="../_images/deeplearning_amazon.png" src="../_images/deeplearning_amazon.png" />
+<p class="caption"><span class="caption-text">Deep learning books recommended by Amazon.</span><a class="headerlink" href="#id29" title="Permalink to this image">¶</a></p>
+</div>
+<p>Despite their tremendous economic value, recommendation systems naively
+built on top of predictive models suffer some serious conceptual flaws.
+To start, we only observe <em>censored feedback</em>. Users preferentially rate
+movies that they feel strongly about: you might notice that items
+receive many 5 and 1 star ratings but that there are conspicuously few
+3-star ratings. Moreover, current purchase habits are often a result of
+the recommendation algorithm currently in place, but learning algorithms
+do not always take this detail into account. Thus it is possible for
+feedback loops to form where a recommender system preferentially pushes
+an item that is then taken to be better (due to greater purchases) and
+in turn is recommended even more frequently. Many of these problems
+about how to deal with censoring, incentives, and feedback loops, are
+important open research questions.</p>
+</div>
+<div class="section" id="sequence-learning">
+<h4>Sequence Learning<a class="headerlink" href="#sequence-learning" title="Permalink to this headline">¶</a></h4>
+<p>So far, we have looked at problems where we have some fixed number of
+inputs and produce a fixed number of outputs. Before we considered
+predicting home prices from a fixed set of features: square footage,
+number of bedrooms, number of bathrooms, walking time to downtown. We
+also discussed mapping from an image (of fixed dimension) to the
+predicted probabilities that it belongs to each of a fixed number of
+classes, or taking a user ID and a product ID, and predicting a star
+rating. In these cases, once we feed our fixed-length input into the
+model to generate an output, the model immediately forgets what it just
+saw.</p>
+<p>This might be fine if our inputs truly all have the same dimensions and
+if successive inputs truly have nothing to do with each other. But how
+would we deal with video snippets? In this case, each snippet might
+consist of a different number of frames. And our guess of what is going
+on in each frame might be much stronger if we take into account the
+previous or succeeding frames. Same goes for language. One popular deep
+learning problem is machine translation: the task of ingesting sentences
+in some source language and predicting their translation in another
+language.</p>
+<p>These problems also occur in medicine. We might want a model to monitor
+patients in the intensive care unit and to fire off alerts if their risk
+of death in the next 24 hours exceeds some threshold. We definitely
+would not want this model to throw away everything it knows about the
+patient history each hour and just make its predictions based on the
+most recent measurements.</p>
+<p>These problems are among the most exciting applications of machine
+learning and they are instances of <em>sequence learning</em>. They require a
+model to either ingest sequences of inputs or to emit sequences of
+outputs (or both!). These latter problems are sometimes referred to as
+<code class="docutils literal notranslate"><span class="pre">seq2seq</span></code> problems. Language translation is a <code class="docutils literal notranslate"><span class="pre">seq2seq</span></code> problem.
+Transcribing text from spoken speech is also a <code class="docutils literal notranslate"><span class="pre">seq2seq</span></code> problem.
+While it is impossible to consider all types of sequence
+transformations, a number of special cases are worth mentioning:</p>
+<p><strong>Tagging and Parsing</strong>. This involves annotating a text sequence with
+attributes. In other words, the number of inputs and outputs is
+essentially the same. For instance, we might want to know where the
+verbs and subjects are. Alternatively, we might want to know which words
+are the named entities. In general, the goal is to decompose and
+annotate text based on structural and grammatical assumptions to get
+some annotation. This sounds more complex than it actually is. Below is
+a very simple example of annotating a sentence with tags indicating
+which words refer to named entities.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Tom has dinner in Washington with Sally.
+Ent  -    -    -     Ent      -    Ent
+</pre></div>
+</div>
+<p><strong>Automatic Speech Recognition</strong>. With speech recognition, the input
+sequence <span class="math notranslate nohighlight">\(x\)</span> is an audio recording of a speaker (shown in
+<a class="reference internal" href="index_vn.html#fig-speech"><span class="std std-numref">Fig. 1.3.5</span></a>), and the output <span class="math notranslate nohighlight">\(y\)</span> is the textual
+transcript of what the speaker said. The challenge is that there are
+many more audio frames (sound is typically sampled at 8kHz or 16kHz)
+than text, i.e., there is no 1:1 correspondence between audio and text,
+since thousands of samples correspond to a single spoken word. These are
+<code class="docutils literal notranslate"><span class="pre">seq2seq</span></code> problems where the output is much shorter than the input.</p>
+<div class="figure align-default" id="id30">
+<span id="fig-speech"></span><a class="reference internal image-reference" href="../_images/speech.png"><img alt="../_images/speech.png" src="../_images/speech.png" style="width: 700px;" /></a>
+<p class="caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">-D-e-e-p-</span> <span class="pre">L-ea-r-ni-ng-</span></code></span><a class="headerlink" href="#id30" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>Text to Speech</strong>. Text-to-Speech (TTS) is the inverse of speech
+recognition. In other words, the input <span class="math notranslate nohighlight">\(x\)</span> is text and the output
+<span class="math notranslate nohighlight">\(y\)</span> is an audio file. In this case, the output is <em>much longer</em>
+than the input. While it is easy for <em>humans</em> to recognize a bad audio
+file, this is not quite so trivial for computers.</p>
+<p><strong>Machine Translation</strong>. Unlike the case of speech recognition, where
+corresponding inputs and outputs occur in the same order (after
+alignment), in machine translation, order inversion can be vital. In
+other words, while we are still converting one sequence into another,
+neither the number of inputs and outputs nor the order of corresponding
+data points are assumed to be the same. Consider the following
+illustrative example of the peculiar tendency of Germans to place the
+verbs at the end of sentences.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>German:           Haben Sie sich schon dieses grossartige Lehrwerk angeschaut?
+English:          Did you already check out this excellent tutorial?
+Wrong alignment:  Did you yourself already this excellent tutorial looked-at?
+</pre></div>
+</div>
+<p>Many related problems pop up in other learning tasks. For instance,
+determining the order in which a user reads a Webpage is a
+two-dimensional layout analysis problem. Dialogue problems exhibit all
+kinds of additional complications, where determining what to say next
+requires taking into account real-world knowledge and the prior state of
+the conversation across long temporal distances. This is an active area
+of research.</p>
+</div>
+</div>
+<div class="section" id="unsupervised-learning">
+<h3>Unsupervised learning<a class="headerlink" href="#unsupervised-learning" title="Permalink to this headline">¶</a></h3>
+<p>All the examples so far were related to <em>Supervised Learning</em>, i.e.,
+situations where we feed the model a giant dataset containing both the
+features and corresponding target values. You could think of the
+supervised learner as having an extremely specialized job and an
+extremely anal boss. The boss stands over your shoulder and tells you
+exactly what to do in every situation until you learn to map from
+situations to actions. Working for such a boss sounds pretty lame. On
+the other hand, it is easy to please this boss. You just recognize the
+pattern as quickly as possible and imitate their actions.</p>
+<p>In a completely opposite way, it could be frustrating to work for a boss
+who has no idea what they want you to do. However, if you plan to be a
+data scientist, you’d better get used to it. The boss might just hand
+you a giant dump of data and tell you to <em>do some data science with it!</em>
+This sounds vague because it is. We call this class of problems
+<em>unsupervised learning</em>, and the type and number of questions we could
+ask is limited only by our creativity. We will address a number of
+unsupervised learning techniques in later chapters. To whet your
+appetite for now, we describe a few of the questions you might ask:</p>
+<ul class="simple">
+<li><p>Can we find a small number of prototypes that accurately summarize
+the data? Given a set of photos, can we group them into landscape
+photos, pictures of dogs, babies, cats, mountain peaks, etc.?
+Likewise, given a collection of users’ browsing activity, can we
+group them into users with similar behavior? This problem is
+typically known as <em>clustering</em>.</p></li>
+<li><p>Can we find a small number of parameters that accurately capture the
+relevant properties of the data? The trajectories of a ball are quite
+well described by velocity, diameter, and mass of the ball. Tailors
+have developed a small number of parameters that describe human body
+shape fairly accurately for the purpose of fitting clothes. These
+problems are referred to as <em>subspace estimation</em> problems. If the
+dependence is linear, it is called <em>principal component analysis</em>.</p></li>
+<li><p>Is there a representation of (arbitrarily structured) objects in
+Euclidean space (i.e., the space of vectors in <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>)
+such that symbolic properties can be well matched? This is called
+<em>representation learning</em> and it is used to describe entities and
+their relations, such as Rome <span class="math notranslate nohighlight">\(-\)</span> Italy <span class="math notranslate nohighlight">\(+\)</span> France
+<span class="math notranslate nohighlight">\(=\)</span> Paris.</p></li>
+<li><p>Is there a description of the root causes of much of the data that we
+observe? For instance, if we have demographic data about house
+prices, pollution, crime, location, education, salaries, etc., can we
+discover how they are related simply based on empirical data? The
+fields concerned with <em>causality</em> and <em>probabilistic graphical
+models</em> address this problem.</p></li>
+<li><p>Another important and exciting recent development in unsupervised
+learning is the advent of <em>generative adversarial networks</em>. These
+give us a procedural way to synthesize data, even complicated
+structured data like images and audio. The underlying statistical
+mechanisms are tests to check whether real and fake data are the
+same. We will devote a few notebooks to them.</p></li>
+</ul>
+</div>
+<div class="section" id="interacting-with-an-environment">
+<h3>Interacting with an Environment<a class="headerlink" href="#interacting-with-an-environment" title="Permalink to this headline">¶</a></h3>
+<p>So far, we have not discussed where data actually comes from, or what
+actually <em>happens</em> when a machine learning model generates an output.
+That is because supervised learning and unsupervised learning do not
+address these issues in a very sophisticated way. In either case, we
+grab a big pile of data up front, then set our pattern recognition
+machines in motion without ever interacting with the environment again.
+Because all of the learning takes place after the algorithm is
+disconnected from the environment, this is sometimes called <em>offline
+learning</em>. For supervised learning, the process looks like
+<a class="reference internal" href="index_vn.html#fig-data-collection"><span class="std std-numref">Fig. 1.3.6</span></a>.</p>
+<div class="figure align-default" id="id31">
+<span id="fig-data-collection"></span><img alt="../_images/data-collection.svg" src="../_images/data-collection.svg" /><p class="caption"><span class="caption-text">Collect data for supervised learning from an environment.</span><a class="headerlink" href="#id31" title="Permalink to this image">¶</a></p>
+</div>
+<p>This simplicity of offline learning has its charms. The upside is we can
+worry about pattern recognition in isolation, without any distraction
+from these other problems. But the downside is that the problem
+formulation is quite limiting. If you are more ambitious, or if you grew
+up reading Asimov’s Robot Series, then you might imagine artificially
+intelligent bots capable not only of making predictions, but of taking
+actions in the world. We want to think about intelligent <em>agents</em>, not
+just predictive <em>models</em>. That means we need to think about choosing
+<em>actions</em>, not just making <em>predictions</em>. Moreover, unlike predictions,
+actions actually impact the environment. If we want to train an
+intelligent agent, we must account for the way its actions might impact
+the future observations of the agent.</p>
+<p>Considering the interaction with an environment opens a whole set of new
+modeling questions. Does the environment:</p>
+<ul class="simple">
+<li><p>Remember what we did previously?</p></li>
+<li><p>Want to help us, e.g., a user reading text into a speech recognizer?</p></li>
+<li><p>Want to beat us, i.e., an adversarial setting like spam filtering
+(against spammers) or playing a game (vs an opponent)?</p></li>
+<li><p>Not care (as in many cases)?</p></li>
+<li><p>Have shifting dynamics (does future data always resemble the past or
+do the patterns change over time, either naturally or in response to
+our automated tools)?</p></li>
+</ul>
+<p>This last question raises the problem of <em>distribution shift</em>, (when
+training and test data are different). It is a problem that most of us
+have experienced when taking exams written by a lecturer, while the
+homeworks were composed by her TAs. We will briefly describe
+reinforcement learning and adversarial learning, two settings that
+explicitly consider interaction with an environment.</p>
+</div>
+<div class="section" id="reinforcement-learning">
+<h3>Reinforcement learning<a class="headerlink" href="#reinforcement-learning" title="Permalink to this headline">¶</a></h3>
+<p>If you are interested in using machine learning to develop an agent that
+interacts with an environment and takes actions, then you are probably
+going to wind up focusing on <em>reinforcement learning</em> (RL). This might
+include applications to robotics, to dialogue systems, and even to
+developing AI for video games. <em>Deep reinforcement learning</em> (DRL),
+which applies deep neural networks to RL problems, has surged in
+popularity. The breakthrough <a class="reference external" href="https://www.wired.com/2015/02/google-ai-plays-atari-like-pros/">deep Q-network that beat humans at Atari
+games using only the visual
+input</a>,
+and the <a class="reference external" href="https://www.wired.com/2017/05/googles-alphago-trounces-humans-also-gives-boost/">AlphaGo program that dethroned the world champion at the board
+game
+Go</a>
+are two prominent examples.</p>
+<p>Reinforcement learning gives a very general statement of a problem, in
+which an agent interacts with an environment over a series of
+<em>timesteps</em>. At each timestep <span class="math notranslate nohighlight">\(t\)</span>, the agent receives some
+observation <span class="math notranslate nohighlight">\(o_t\)</span> from the environment and must choose an action
+<span class="math notranslate nohighlight">\(a_t\)</span> that is subsequently transmitted back to the environment via
+some mechanism (sometimes called an actuator). Finally, the agent
+receives a reward <span class="math notranslate nohighlight">\(r_t\)</span> from the environment. The agent then
+receives a subsequent observation, and chooses a subsequent action, and
+so on. The behavior of an RL agent is governed by a <em>policy</em>. In short,
+a <em>policy</em> is just a function that maps from observations (of the
+environment) to actions. The goal of reinforcement learning is to
+produce a good policy.</p>
+<div class="figure align-default" id="id32">
+<img alt="../_images/rl-environment.svg" src="../_images/rl-environment.svg" /><p class="caption"><span class="caption-text">The interaction between reinforcement learning and an environment.</span><a class="headerlink" href="#id32" title="Permalink to this image">¶</a></p>
+</div>
+<p>It is hard to overstate the generality of the RL framework. For example,
+we can cast any supervised learning problem as an RL problem. Say we had
+a classification problem. We could create an RL agent with one <em>action</em>
+corresponding to each class. We could then create an environment which
+gave a reward that was exactly equal to the loss function from the
+original supervised problem.</p>
+<p>That being said, RL can also address many problems that supervised
+learning cannot. For example, in supervised learning we always expect
+that the training input comes associated with the correct label. But in
+RL, we do not assume that for each observation, the environment tells us
+the optimal action. In general, we just get some reward. Moreover, the
+environment may not even tell us which actions led to the reward.</p>
+<p>Consider for example the game of chess. The only real reward signal
+comes at the end of the game when we either win, which we might assign a
+reward of 1, or when we lose, which we could assign a reward of -1. So
+reinforcement learners must deal with the <em>credit assignment problem</em>:
+determining which actions to credit or blame for an outcome. The same
+goes for an employee who gets a promotion on October 11. That promotion
+likely reflects a large number of well-chosen actions over the previous
+year. Getting more promotions in the future requires figuring out what
+actions along the way led to the promotion.</p>
+<p>Reinforcement learners may also have to deal with the problem of partial
+observability. That is, the current observation might not tell you
+everything about your current state. Say a cleaning robot found itself
+trapped in one of many identical closets in a house. Inferring the
+precise location (and thus state) of the robot might require considering
+its previous observations before entering the closet.</p>
+<p>Finally, at any given point, reinforcement learners might know of one
+good policy, but there might be many other better policies that the
+agent has never tried. The reinforcement learner must constantly choose
+whether to <em>exploit</em> the best currently-known strategy as a policy, or
+to <em>explore</em> the space of strategies, potentially giving up some
+short-run reward in exchange for knowledge.</p>
+<div class="section" id="mdps-bandits-and-friends">
+<h4>MDPs, bandits, and friends<a class="headerlink" href="#mdps-bandits-and-friends" title="Permalink to this headline">¶</a></h4>
+<p>The general reinforcement learning problem is a very general setting.
+Actions affect subsequent observations. Rewards are only observed
+corresponding to the chosen actions. The environment may be either fully
+or partially observed. Accounting for all this complexity at once may
+ask too much of researchers. Moreover, not every practical problem
+exhibits all this complexity. As a result, researchers have studied a
+number of <em>special cases</em> of reinforcement learning problems.</p>
+<p>When the environment is fully observed, we call the RL problem a <em>Markov
+Decision Process</em> (MDP). When the state does not depend on the previous
+actions, we call the problem a <em>contextual bandit problem</em>. When there
+is no state, just a set of available actions with initially unknown
+rewards, this problem is the classic <em>multi-armed bandit problem</em>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="roots">
+<h2>Roots<a class="headerlink" href="#roots" title="Permalink to this headline">¶</a></h2>
+<p>Although many deep learning methods are recent inventions, humans have
+held the desire to analyze data and to predict future outcomes for
+centuries. In fact, much of natural science has its roots in this. For
+instance, the Bernoulli distribution is named after <a class="reference external" href="https://en.wikipedia.org/wiki/Jacob_Bernoulli">Jacob Bernoulli
+(1655-1705)</a>, and the
+Gaussian distribution was discovered by <a class="reference external" href="https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss">Carl Friedrich Gauss
+(1777-1855)</a>. He
+invented for instance the least mean squares algorithm, which is still
+used today for countless problems from insurance calculations to medical
+diagnostics. These tools gave rise to an experimental approach in the
+natural sciences—for instance, Ohm’s law relating current and voltage in
+a resistor is perfectly described by a linear model.</p>
+<p>Even in the middle ages, mathematicians had a keen intuition of
+estimates. For instance, the geometry book of <a class="reference external" href="https://www.maa.org/press/periodicals/convergence/mathematical-treasures-jacob-kobels-geometry">Jacob Köbel
+(1460-1533)</a>
+illustrates averaging the length of 16 adult men’s feet to obtain the
+average foot length.</p>
+<div class="figure align-default" id="id33">
+<span id="fig-koebel"></span><a class="reference internal image-reference" href="../_images/koebel.jpg"><img alt="../_images/koebel.jpg" src="../_images/koebel.jpg" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-text">Estimating the length of a foot</span><a class="headerlink" href="#id33" title="Permalink to this image">¶</a></p>
+</div>
+<p><a class="reference internal" href="index_vn.html#fig-koebel"><span class="std std-numref">Fig. 1.4.1</span></a> illustrates how this estimator works. The 16
+adult men were asked to line up in a row, when leaving church. Their
+aggregate length was then divided by 16 to obtain an estimate for what
+now amounts to 1 foot. This “algorithm” was later improved to deal with
+misshapen feet—the 2 men with the shortest and longest feet respectively
+were sent away, averaging only over the remainder. This is one of the
+earliest examples of the trimmed mean estimate.</p>
+<p>Statistics really took off with the collection and availability of data.
+One of its titans, <a class="reference external" href="https://en.wikipedia.org/wiki/Ronald_Fisher">Ronald Fisher
+(1890-1962)</a>,
+contributed significantly to its theory and also its applications in
+genetics. Many of his algorithms (such as Linear Discriminant Analysis)
+and formula (such as the Fisher Information Matrix) are still in
+frequent use today (even the Iris dataset that he released in 1936 is
+still used sometimes to illustrate machine learning algorithms). Fisher
+was also a proponent of eugenics, which should remind us that the
+morally dubious use data science has as long and enduring a history as
+its productive use in industry and the natural sciences.</p>
+<p>A second influence for machine learning came from Information Theory
+<a class="reference external" href="https://en.wikipedia.org/wiki/Claude_Shannon">(Claude Shannon,
+1916-2001)</a> and the
+Theory of computation via <a class="reference external" href="https://en.wikipedia.org/wiki/Alan_Turing">Alan Turing
+(1912-1954)</a>. Turing posed
+the question “can machines think?” in his famous paper <a class="reference external" href="https://en.wikipedia.org/wiki/Computing_Machinery_and_Intelligence">Computing
+machinery and
+intelligence</a>
+(Mind, October 1950). In what he described as the Turing test, a machine
+can be considered intelligent if it is difficult for a human evaluator
+to distinguish between the replies from a machine and a human based on
+textual interactions.</p>
+<p>Another influence can be found in neuroscience and psychology. After
+all, humans clearly exhibit intelligent behavior. It is thus only
+reasonable to ask whether one could explain and possibly reverse
+engineer this capacity. One of the oldest algorithms inspired in this
+fashion was formulated by <a class="reference external" href="https://en.wikipedia.org/wiki/Donald_O._Hebb">Donald Hebb
+(1904-1985)</a>. In his
+groundbreaking book The Organization of Behavior
+<a class="bibtex reference internal" href="../chapter_references/zreferences.html#hebb-hebb-1949" id="id1">[Hebb &amp; Hebb, 1949]</a>, he posited that neurons learn by positive
+reinforcement. This became known as the Hebbian learning rule. It is the
+prototype of Rosenblatt’s perceptron learning algorithm and it laid the
+foundations of many stochastic gradient descent algorithms that underpin
+deep learning today: reinforce desirable behavior and diminish
+undesirable behavior to obtain good settings of the parameters in a
+neural network.</p>
+<p>Biological inspiration is what gave <em>neural networks</em> their name. For
+over a century (dating back to the models of Alexander Bain, 1873 and
+James Sherrington, 1890), researchers have tried to assemble
+computational circuits that resemble networks of interacting neurons.
+Over time, the interpretation of biology has become less literal but the
+name stuck. At its heart, lie a few key principles that can be found in
+most networks today:</p>
+<ul class="simple">
+<li><p>The alternation of linear and nonlinear processing units, often
+referred to as <em>layers</em>.</p></li>
+<li><p>The use of the chain rule (also known as <em>backpropagation</em>) for
+adjusting parameters in the entire network at once.</p></li>
+</ul>
+<p>After initial rapid progress, research in neural networks languished
+from around 1995 until 2005. This was due to a number of reasons.
+Training a network is computationally very expensive. While RAM was
+plentiful at the end of the past century, computational power was
+scarce. Second, datasets were relatively small. In fact, Fisher’s Iris
+dataset from 1932 was a popular tool for testing the efficacy of
+algorithms. MNIST with its 60,000 handwritten digits was considered
+huge.</p>
+<p>Given the scarcity of data and computation, strong statistical tools
+such as Kernel Methods, Decision Trees and Graphical Models proved
+empirically superior. Unlike neural networks, they did not require weeks
+to train and provided predictable results with strong theoretical
+guarantees.</p>
+</div>
+<div class="section" id="the-road-to-deep-learning">
+<h2>The Road to Deep Learning<a class="headerlink" href="#the-road-to-deep-learning" title="Permalink to this headline">¶</a></h2>
+<p>Much of this changed with the ready availability of large amounts of
+data, due to the World Wide Web, the advent of companies serving
+hundreds of millions of users online, a dissemination of cheap, high
+quality sensors, cheap data storage (Kryder’s law), and cheap
+computation (Moore’s law), in particular in the form of GPUs, originally
+engineered for computer gaming. Suddenly algorithms and models that
+seemed computationally infeasible became relevant (and vice versa). This
+is best illustrated in <code class="xref std std-numref docutils literal notranslate"><span class="pre">tab_intro_decade</span></code>.</p>
+<span id="tab-intro-decade"></span><table class="docutils align-default" id="id34">
+<caption><span class="caption-text">Dataset versus computer memory and computational power</span><a class="headerlink" href="#id34" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Decade</p></th>
+<th class="head"><p>Dataset</p></th>
+<th class="head"><p>Memory</p></th>
+<th class="head"><p>Floating Point
+Calculations
+per Second</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1970</p></td>
+<td><p>100 (Iris)</p></td>
+<td><p>1 KB</p></td>
+<td><p>100 KF (Intel
+8080)</p></td>
+</tr>
+<tr class="row-odd"><td><p>1980</p></td>
+<td><p>1 K (House
+prices in
+Boston)</p></td>
+<td><p>100 KB</p></td>
+<td><p>1 MF (Intel
+80186)</p></td>
+</tr>
+<tr class="row-even"><td><p>1990</p></td>
+<td><p>10 K (optical
+character
+recognition)</p></td>
+<td><p>10 MB</p></td>
+<td><p>10 MF (Intel
+80486)</p></td>
+</tr>
+<tr class="row-odd"><td><p>2000</p></td>
+<td><p>10 M (web
+pages)</p></td>
+<td><p>100 MB</p></td>
+<td><p>1 GF (Intel
+Core)</p></td>
+</tr>
+<tr class="row-even"><td><p>2010</p></td>
+<td><p>10 G
+(advertising)</p></td>
+<td><p>1 GB</p></td>
+<td><p>1 TF (Nvidia
+C2050)</p></td>
+</tr>
+<tr class="row-odd"><td><p>2020</p></td>
+<td><p>1 T (social
+network)</p></td>
+<td><p>100 GB</p></td>
+<td><p>1 PF (Nvidia
+DGX-2)</p></td>
+</tr>
+</tbody>
+</table>
+<p>It is evident that RAM has not kept pace with the growth in data. At the
+same time, the increase in computational power has outpaced that of the
+data available. This means that statistical models needed to become more
+memory efficient (this is typically achieved by adding nonlinearities)
+while simultaneously being able to spend more time on optimizing these
+parameters, due to an increased compute budget. Consequently the sweet
+spot in machine learning and statistics moved from (generalized) linear
+models and kernel methods to deep networks. This is also one of the
+reasons why many of the mainstays of deep learning, such as multilayer
+perceptrons <a class="bibtex reference internal" href="../chapter_references/zreferences.html#mcculloch-pitts-1943" id="id2">[McCulloch &amp; Pitts, 1943]</a>, convolutional neural
+networks <a class="bibtex reference internal" href="../chapter_references/zreferences.html#lecun-bottou-bengio-ea-1998" id="id3">[LeCun et al., 1998]</a>, Long Short-Term Memory
+<a class="bibtex reference internal" href="../chapter_references/zreferences.html#hochreiter-schmidhuber-1997" id="id4">[Hochreiter &amp; Schmidhuber, 1997]</a>, and Q-Learning
+<a class="bibtex reference internal" href="../chapter_references/zreferences.html#watkins-dayan-1992" id="id5">[Watkins &amp; Dayan, 1992]</a>, were essentially “rediscovered” in the
+past decade, after laying comparatively dormant for considerable time.</p>
+<p>The recent progress in statistical models, applications, and algorithms,
+has sometimes been likened to the Cambrian Explosion: a moment of rapid
+progress in the evolution of species. Indeed, the state of the art is
+not just a mere consequence of available resources, applied to decades
+old algorithms. Note that the list below barely scratches the surface of
+the ideas that have helped researchers achieve tremendous progress over
+the past decade.</p>
+<ul class="simple">
+<li><p>Novel methods for capacity control, such as Dropout
+<a class="bibtex reference internal" href="../chapter_references/zreferences.html#srivastava-hinton-krizhevsky-ea-2014" id="id6">[Srivastava et al., 2014]</a> have helped to
+mitigate the danger of overfitting. This was achieved by applying
+noise injection <a class="bibtex reference internal" href="../chapter_references/zreferences.html#bishop-1995" id="id7">[Bishop, 1995]</a> throughout the network,
+replacing weights by random variables for training purposes.</p></li>
+<li><p>Attention mechanisms solved a second problem that had plagued
+statistics for over a century: how to increase the memory and
+complexity of a system without increasing the number of learnable
+parameters. <a class="bibtex reference internal" href="../chapter_references/zreferences.html#bahdanau-cho-bengio-2014" id="id8">[Bahdanau et al., 2014]</a> found an elegant
+solution by using what can only be viewed as a learnable pointer
+structure. Rather than having to remember an entire sentence, e.g.,
+for machine translation in a fixed-dimensional representation, all
+that needed to be stored was a pointer to the intermediate state of
+the translation process. This allowed for significantly increased
+accuracy for long sentences, since the model no longer needed to
+remember the entire sentence before commencing the generation of a
+new sentence.</p></li>
+<li><p>Multi-stage designs, e.g., via the Memory Networks (MemNets)
+<a class="bibtex reference internal" href="../chapter_references/zreferences.html#sukhbaatar-weston-fergus-ea-2015" id="id9">[Sukhbaatar et al., 2015]</a> and the Neural
+Programmer-Interpreter <a class="bibtex reference internal" href="../chapter_references/zreferences.html#reed-de-freitas-2015" id="id10">[Reed &amp; DeFreitas, 2015]</a> allowed
+statistical modelers to describe iterative approaches to reasoning.
+These tools allow for an internal state of the deep network to be
+modified repeatedly, thus carrying out subsequent steps in a chain of
+reasoning, similar to how a processor can modify memory for a
+computation.</p></li>
+<li><p>Another key development was the invention of GANS
+<a class="bibtex reference internal" href="../chapter_references/zreferences.html#goodfellow-pouget-abadie-mirza-ea-2014" id="id11">[Goodfellow et al., 2014]</a>. Traditionally,
+statistical methods for density estimation and generative models
+focused on finding proper probability distributions and (often
+approximate) algorithms for sampling from them. As a result, these
+algorithms were largely limited by the lack of flexibility inherent
+in the statistical models. The crucial innovation in GANs was to
+replace the sampler by an arbitrary algorithm with differentiable
+parameters. These are then adjusted in such a way that the
+discriminator (effectively a two-sample test) cannot distinguish fake
+from real data. Through the ability to use arbitrary algorithms to
+generate data, it opened up density estimation to a wide variety of
+techniques. Examples of galloping Zebras
+<a class="bibtex reference internal" href="../chapter_references/zreferences.html#zhu-park-isola-ea-2017" id="id12">[Zhu et al., 2017]</a> and of fake celebrity faces
+<a class="bibtex reference internal" href="../chapter_references/zreferences.html#karras-aila-laine-ea-2017" id="id13">[Karras et al., 2017]</a> are both testimony to this
+progress.</p></li>
+<li><p>In many cases, a single GPU is insufficient to process the large
+amounts of data available for training. Over the past decade the
+ability to build parallel distributed training algorithms has
+improved significantly. One of the key challenges in designing
+scalable algorithms is that the workhorse of deep learning
+optimization, stochastic gradient descent, relies on relatively small
+minibatches of data to be processed. At the same time, small batches
+limit the efficiency of GPUs. Hence, training on 1024 GPUs with a
+minibatch size of, say 32 images per batch amounts to an aggregate
+minibatch of 32k images. Recent work, first by Li <a class="bibtex reference internal" href="../chapter_references/zreferences.html#li-2017" id="id14">[Li, 2017]</a>,
+and subsequently by <a class="bibtex reference internal" href="../chapter_references/zreferences.html#you-gitman-ginsburg-2017" id="id15">[You et al., 2017]</a> and
+<a class="bibtex reference internal" href="../chapter_references/zreferences.html#jia-song-he-ea-2018" id="id16">[Jia et al., 2018]</a> pushed the size up to 64k observations,
+reducing training time for ResNet50 on ImageNet to less than 7
+minutes. For comparison—initially training times were measured in the
+order of days.</p></li>
+<li><p>The ability to parallelize computation has also contributed quite
+crucially to progress in reinforcement learning, at least whenever
+simulation is an option. This has led to significant progress in
+computers achieving superhuman performance in Go, Atari games,
+Starcraft, and in physics simulations (e.g., using MuJoCo). See e.g.,
+<a class="bibtex reference internal" href="../chapter_references/zreferences.html#silver-huang-maddison-ea-2016" id="id17">[Silver et al., 2016]</a> for a description of how to
+achieve this in AlphaGo. In a nutshell, reinforcement learning works
+best if plenty of (state, action, reward)triples are available, i.e.,
+whenever it is possible to try out lots of things to learn how they
+relate to each other. Simulation provides such an avenue.</p></li>
+<li><p>Deep Learning frameworks have played a crucial role in disseminating
+ideas. The first generation of frameworks allowing for easy modeling
+encompassed <a class="reference external" href="https://github.com/BVLC/caffe">Caffe</a>,
+<a class="reference external" href="https://github.com/torch">Torch</a>, and
+<a class="reference external" href="https://github.com/Theano/Theano">Theano</a>. Many seminal papers
+were written using these tools. By now, they have been superseded by
+<a class="reference external" href="https://github.com/tensorflow/tensorflow">TensorFlow</a>, often used
+via its high level API
+<a class="reference external" href="https://github.com/keras-team/keras">Keras</a>,
+<a class="reference external" href="https://github.com/Microsoft/CNTK">CNTK</a>, <a class="reference external" href="https://github.com/caffe2/caffe2">Caffe
+2</a>, and <a class="reference external" href="https://github.com/apache/incubator-mxnet">Apache
+MxNet</a>. The third
+generation of tools, namely imperative tools for deep learning, was
+arguably spearheaded by
+<a class="reference external" href="https://github.com/chainer/chainer">Chainer</a>, which used a syntax
+similar to Python NumPy to describe models. This idea was adopted by
+<a class="reference external" href="https://github.com/pytorch/pytorch">PyTorch</a> and the <a class="reference external" href="https://github.com/apache/incubator-mxnet">Gluon
+API</a> of MXNet. It is
+the latter group that this course uses to teach deep learning.</p></li>
+</ul>
+<p>The division of labor between systems researchers building better tools
+and statistical modelers building better networks has greatly simplified
+things. For instance, training a linear logistic regression model used
+to be a nontrivial homework problem, worthy to give to new machine
+learning PhD students at Carnegie Mellon University in 2014. By now,
+this task can be accomplished with less than 10 lines of code, putting
+it firmly into the grasp of programmers.</p>
+</div>
+<div class="section" id="success-stories">
+<h2>Success Stories<a class="headerlink" href="#success-stories" title="Permalink to this headline">¶</a></h2>
+<p>Artificial Intelligence has a long history of delivering results that
+would be difficult to accomplish otherwise. For instance, mail is sorted
+using optical character recognition. These systems have been deployed
+since the 90s (this is, after all, the source of the famous MNIST and
+USPS sets of handwritten digits). The same applies to reading checks for
+bank deposits and scoring creditworthiness of applicants. Financial
+transactions are checked for fraud automatically. This forms the
+backbone of many e-commerce payment systems, such as PayPal, Stripe,
+AliPay, WeChat, Apple, Visa, MasterCard. Computer programs for chess
+have been competitive for decades. Machine learning feeds search,
+recommendation, personalization and ranking on the Internet. In other
+words, artificial intelligence and machine learning are pervasive,
+albeit often hidden from sight.</p>
+<p>It is only recently that AI has been in the limelight, mostly due to
+solutions to problems that were considered intractable previously.</p>
+<ul class="simple">
+<li><p>Intelligent assistants, such as Apple’s Siri, Amazon’s Alexa, or
+Google’s assistant are able to answer spoken questions with a
+reasonable degree of accuracy. This includes menial tasks such as
+turning on light switches (a boon to the disabled) up to making
+barber’s appointments and offering phone support dialog. This is
+likely the most noticeable sign that AI is affecting our lives.</p></li>
+<li><p>A key ingredient in digital assistants is the ability to recognize
+speech accurately. Gradually the accuracy of such systems has
+increased to the point where they reach human parity
+<a class="bibtex reference internal" href="../chapter_references/zreferences.html#xiong-wu-alleva-ea-2018" id="id18">[Xiong et al., 2018]</a> for certain applications.</p></li>
+<li><p>Object recognition likewise has come a long way. Estimating the
+object in a picture was a fairly challenging task in 2010. On the
+ImageNet benchmark <a class="bibtex reference internal" href="../chapter_references/zreferences.html#lin-lv-zhu-ea-2010" id="id19">[Lin et al., 2010]</a> achieved a top-5
+error rate of 28%. By 2017, <a class="bibtex reference internal" href="../chapter_references/zreferences.html#hu-shen-sun-2018" id="id20">[Hu et al., 2018]</a> reduced this
+error rate to 2.25%. Similarly stunning results have been achieved
+for identifying birds, or diagnosing skin cancer.</p></li>
+<li><p>Games used to be a bastion of human intelligence. Starting from
+TDGammon [23], a program for playing Backgammon using temporal
+difference (TD) reinforcement learning, algorithmic and computational
+progress has led to algorithms for a wide range of applications.
+Unlike Backgammon, chess has a much more complex state space and set
+of actions. DeepBlue beat Gary Kasparov, Campbell et al.
+<a class="bibtex reference internal" href="../chapter_references/zreferences.html#campbell-hoane-jr-hsu-2002" id="id21">[Campbell et al., 2002]</a>, using massive parallelism,
+special purpose hardware and efficient search through the game tree.
+Go is more difficult still, due to its huge state space. AlphaGo
+reached human parity in 2015, <a class="bibtex reference internal" href="../chapter_references/zreferences.html#silver-huang-maddison-ea-2016" id="id22">[Silver et al., 2016]</a>
+using Deep Learning combined with Monte Carlo tree sampling. The
+challenge in Poker was that the state space is large and it is not
+fully observed (we do not know the opponents’ cards). Libratus
+exceeded human performance in Poker using efficiently structured
+strategies <a class="bibtex reference internal" href="../chapter_references/zreferences.html#brown-sandholm-2017" id="id23">[Brown &amp; Sandholm, 2017]</a>. This illustrates the
+impressive progress in games and the fact that advanced algorithms
+played a crucial part in them.</p></li>
+<li><p>Another indication of progress in AI is the advent of self-driving
+cars and trucks. While full autonomy is not quite within reach yet,
+excellent progress has been made in this direction, with companies
+such as Tesla, NVIDIA, and Waymo shipping products that enable at
+least partial autonomy. What makes full autonomy so challenging is
+that proper driving requires the ability to perceive, to reason and
+to incorporate rules into a system. At present, deep learning is used
+primarily in the computer vision aspect of these problems. The rest
+is heavily tuned by engineers.</p></li>
+</ul>
+<p>Again, the above list barely scratches the surface of where machine
+learning has impacted practical applications. For instance, robotics,
+logistics, computational biology, particle physics, and astronomy owe
+some of their most impressive recent advances at least in parts to
+machine learning. ML is thus becoming a ubiquitous tool for engineers
+and scientists.</p>
+<p>Frequently, the question of the AI apocalypse, or the AI singularity has
+been raised in non-technical articles on AI. The fear is that somehow
+machine learning systems will become sentient and decide independently
+from their programmers (and masters) about things that directly affect
+the livelihood of humans. To some extent, AI already affects the
+livelihood of humans in an immediate way—creditworthiness is assessed
+automatically, autopilots mostly navigate cars, decisions about whether
+to grant bail use statistical data as input. More frivolously, we can
+ask Alexa to switch on the coffee machine.</p>
+<p>Fortunately, we are far from a sentient AI system that is ready to
+manipulate its human creators (or burn their coffee). First, AI systems
+are engineered, trained and deployed in a specific, goal-oriented
+manner. While their behavior might give the illusion of general
+intelligence, it is a combination of rules, heuristics and statistical
+models that underlie the design. Second, at present tools for
+<em>artificial general intelligence</em> simply do not exist that are able to
+improve themselves, reason about themselves, and that are able to
+modify, extend and improve their own architecture while trying to solve
+general tasks.</p>
+<p>A much more pressing concern is how AI is being used in our daily lives.
+It is likely that many menial tasks fulfilled by truck drivers and shop
+assistants can and will be automated. Farm robots will likely reduce the
+cost for organic farming but they will also automate harvesting
+operations. This phase of the industrial revolution may have profound
+consequences on large swaths of society (truck drivers and shop
+assistants are some of the most common jobs in many states).
+Furthermore, statistical models, when applied without care can lead to
+racial, gender or age bias and raise reasonable concerns about
+procedural fairness if automated to drive consequential decisions. It is
+important to ensure that these algorithms are used with care. With what
+we know today, this strikes us a much more pressing concern than the
+potential of malevolent superintelligence to destroy humanity.</p>
+</div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Machine learning studies how computer systems can leverage
+<em>experience</em> (often data) to improve performance at specific tasks.
+It combines ideas from statistics, data mining, artificial
+intelligence, and optimization. Often, it is used as a means of
+implementing artificially-intelligent solutions.</p></li>
+<li><p>As a class of machine learning, representational learning focuses on
+how to automatically find the appropriate way to represent data. This
+is often accomplished by a progression of learned transformations.</p></li>
+<li><p>Much of the recent progress in deep learning has been triggered by an
+abundance of data arising from cheap sensors and Internet-scale
+applications, and by significant progress in computation, mostly
+through GPUs.</p></li>
+<li><p>Whole system optimization is a key component in obtaining good
+performance. The availability of efficient deep learning frameworks
+has made design and implementation of this significantly easier.</p></li>
+</ul>
+</div>
+<div class="section" id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Which parts of code that you are currently writing could be
+“learned”, i.e., improved by learning and automatically determining
+design choices that are made in your code? Does your code include
+heuristic design choices?</p></li>
+<li><p>Which problems that you encounter have many examples for how to solve
+them, yet no specific way to automate them? These may be prime
+candidates for using deep learning.</p></li>
+<li><p>Viewing the development of artificial intelligence as a new
+industrial revolution, what is the relationship between algorithms
+and data? Is it similar to steam engines and coal (what is the
+fundamental difference)?</p></li>
+<li><p>Where else can you apply the end-to-end training approach? Physics?
+Engineering? Econometrics?</p></li>
+</ol>
+</div>
+<div class="section" id="discussions">
+<h2><a class="reference external" href="https://discuss.mxnet.io/t/2310">Discussions</a><a class="headerlink" href="#discussions" title="Permalink to this headline">¶</a></h2>
+<p><img alt="image0" src="../_images/qr_introduction.svg" /></p>
+</div>
+</div>
+
+
+        </div>
+        <div class="side-doc-outline">
+            <div class="side-doc-outline--content"> 
+<div class="localtoc">
+    <p class="caption">
+      <span class="caption-text">Table Of Contents</span>
+    </p>
+    <ul>
+<li><a class="reference internal" href="#">Introduction</a><ul>
+<li><a class="reference internal" href="#a-motivating-example">A Motivating Example</a></li>
+<li><a class="reference internal" href="#the-key-components-data-models-and-algorithms">The Key Components: Data, Models, and Algorithms</a><ul>
+<li><a class="reference internal" href="#data">Data</a></li>
+<li><a class="reference internal" href="#models">Models</a></li>
+<li><a class="reference internal" href="#objective-functions">Objective functions</a></li>
+<li><a class="reference internal" href="#optimization-algorithms">Optimization algorithms</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#kinds-of-machine-learning">Kinds of Machine Learning</a><ul>
+<li><a class="reference internal" href="#supervised-learning">Supervised learning</a><ul>
+<li><a class="reference internal" href="#regression">Regression</a></li>
+<li><a class="reference internal" href="#classification">Classification</a></li>
+<li><a class="reference internal" href="#tagging">Tagging</a></li>
+<li><a class="reference internal" href="#search-and-ranking">Search and ranking</a></li>
+<li><a class="reference internal" href="#recommender-systems">Recommender systems</a></li>
+<li><a class="reference internal" href="#sequence-learning">Sequence Learning</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#unsupervised-learning">Unsupervised learning</a></li>
+<li><a class="reference internal" href="#interacting-with-an-environment">Interacting with an Environment</a></li>
+<li><a class="reference internal" href="#reinforcement-learning">Reinforcement learning</a><ul>
+<li><a class="reference internal" href="#mdps-bandits-and-friends">MDPs, bandits, and friends</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#roots">Roots</a></li>
+<li><a class="reference internal" href="#the-road-to-deep-learning">The Road to Deep Learning</a></li>
+<li><a class="reference internal" href="#success-stories">Success Stories</a></li>
+<li><a class="reference internal" href="#summary">Summary</a></li>
+<li><a class="reference internal" href="#exercises">Exercises</a></li>
+<li><a class="reference internal" href="#discussions">Discussions</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+            </div>
+        </div>
+
+      <div class="clearer"></div>
+    </div><div class="pagenation">
+  </div>
+        
+        </main>
+    </div>
+  </body>
+</html>
