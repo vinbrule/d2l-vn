@@ -19,9 +19,9 @@ It boasts both more examples and more features, covering house prices in Ames, I
 
 Trong phần trước, chúng tôi đã giới thiệu những công cụ cơ bản để xây dựng mạng học sâu và kiểm soát năng lực của nó thông qua việc giảm chiều dữ liệu, suy giảm trọng số và dropout.
 Giờ bạn đã sẵn sàng để ứng dụng tất cả những kiến thức này vào thực tiễn bằng cách tham gia một cuộc thi trên Kaggle.
-[Dự đoán giá nhà](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) là một bài toán tuyệt vời để bắt đầu: dữ liệu tương đối khái quát, không có cấu trúc cứng nhắc nên không đòi hỏi những mô hình đặc biệt như các bài toán có dữ liệu ảnh và âm thanh. 
-Tập dữ liệu này được thu thập bởi Bart de Cock vào năm 2011 :cite:`De-Cock.2011`, lớn hơn rất nhiều so với [tập dữ liệu giá nhà Boston](https://archive.ics.uci.edu/ml/machine-learning-databases/housing/housing.names) nổi tiếng của Harrison và Rubinfeld (1978).
-Nó có nhiều mẫu và đặc trưng hơn, chứa thông tin về giá nhà ở Ames, Indiana trong khoảng thời gian từ 2006-2010.
+[Predicting house prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) là một bài toán tuyệt vời để bắt đầu: dữ liệu tương đối khái quát, không có cấu trúc cứng nhắc nên không đòi hỏi những mô hình đặc biệt như các bài toán có dữ liệu ảnh và âm thanh. 
+Bộ dữ liệu này được thu thập bởi Bart de Cock vào năm 2011 :cite:`De-Cock.2011`, lớn hơn rất nhiều bộ dữ liệu nổi tiếng [Boston housing dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/housing/housing.names) của Harrison và Rubinfeld (1978).
+Nó có nhiều ví dụ và đặc trưng hơn, chứa thông tin về giá nhà ở Ames, IA trong khoảng thời gian từ 2006-2010.
 
 <!--
 In this section, we will walk you through details of data preprocessing, model design, hyperparameter selection and tuning.
@@ -29,8 +29,8 @@ We hope that through a hands-on approach, you will be able to observe the effect
 This experience is vital to gaining intuition as a data scientist.
 -->
 
-Trong mục này, chúng tôi sẽ hướng dẫn bạn một cách chi tiết các bước tiền xử lý dữ liệu, thiết kế mô hình, lựa chọn và điều chỉnh siêu tham số. 
-Chúng tôi mong rằng thông qua việc thực hành, bạn sẽ có thể quan sát được tác động của việc kiểm soát năng lực mô hình, trích xuất đặc trưng, v.v. trong thực tiễn. 
+Trong phần này, chúng tôi sẽ hướng dẫn bạn một cách chi tiết các bước tiền xử lý dữ liệu, thiết kế mô hình, lựa chọn và điều chỉnh siêu tham số. 
+Chúng tôi mong rằng thông qua việc thực hành, bạn sẽ có thể quan sát được những tác động của kiểm soát năng lực, trích xuất đặc trưng, v.v. trong thực tiễn. 
 Kinh nghiệm này rất quan trọng để bạn có được trực giác của một nhà khoa học dữ liệu. 
 <!--
 ## Downloading and Caching Datasets
@@ -45,9 +45,10 @@ First, we maintain a dictionary `DATA_HUB` that maps a string name to a URL with
 where SHA-1 verifies the integrity of the file. Such datasets are hosted on the `DATA_URL` site.
 -->
 
-Trong suốt cuốn sách chúng ta sẽ cần tải và thử nghiệm nhiều mô hình trên các tập dữ liệu khác nhau.
+Trong suốt cuốn sách chúng ta sẽ cần tải và thử nghiệm nhiều mô hình trên các bộ dữ liệu khác nhau. 
 Ta sẽ lập trình một số hàm tiện ích để hỗ trợ cho việc tải dữ liệu.
-Đầu tiên, ta cần khởi tạo một từ điển `DATA_HUB` nhằm ánh xạ một xâu ký tự đến đường dẫn (URL) với SHA-1 của tệp tại đường dẫn đó, trong đó SHA-1 dùng để xác minh tính toàn vẹn của tệp. Các tập dữ liệu này được lưu trữ trên trang `DATA_URL`.
+Đầu tiên, ta cần khởi tạo một từ điển `DATA_HUB` nhằm ánh xạ một xâu ký tự đến đường dẫn (URL) với SHA-1 của tệp tại đường dẫn đó, 
+trong đó SHA-1 dùng để xác minh tính toàn vẹn của tệp. Các bộ dữ liệu này được lưu trữ trên trang `DATA_URL`.
 
 ```{.python .input  n=2}
 import os
@@ -74,9 +75,9 @@ That is to say, you only need to download datasets once with a network connectio
 This `download` function returns the name of the downloaded file.
 -->
 
-Hàm `download` dưới đây tải tập dữ liệu có tên `name` từ đường dẫn tương ứng và lưu trữ nó tại bộ nhớ cục bộ (mặc định tại `../data`).
-Nếu tệp trên đã tồn tại trong bộ nhớ đệm và SHA-1 của nó khớp với tệp trong `DATA_HUB`, tệp trong bộ nhớ đệm sẽ được sử dụng luôn mà không cần phải tải lại.
-Điều này nghĩa là bạn chỉ cần tải tập dữ liệu đúng một lần khi có kết nối mạng.
+Hàm `download` dưới đây tải bộ dữ liệu từ đường dẫn ứng với tên `name` cụ thể và lưu trữ nó tại bộ nhớ cục bộ (mặc định tại `../data`).
+Nếu tệp trên đã tồn tại trong bộ nhớ đệm và SHA-1 của nó khớp với tệp trong `DATA_HUB`, tệp trong lưu trữ sẽ được sử dụng và việc tải về là không cần thiết. 
+Điều này nghĩa là, bạn chỉ cần tải bộ dữ liệu về với một lần kết nối mạng.
 Hàm `download` trả về tên của tệp được tải xuống.
 
 ```{.python .input  n=6}
@@ -95,8 +96,9 @@ We also implement two additional functions: one is to download and extract a zip
 You may invoke the latter to download all these datasets once and for all if your network connection is slow.
 -->
 
-Chúng ta cũng lập trình thêm hai hàm khác: một hàm để tải và giải nén tệp zip/tar, và hàm còn lại để tải tất cả các file từ `DATA_HUB` (chứa phần lớn các tập dữ liệu được sử dụng trong cuốn sách này) về bộ nhớ đệm. 
-Bạn có thể sử dụng hàm thứ hai để tải tất cả các tập dữ liệu này trong cùng một lần tải nếu kết nối mạng của bạn chậm.
+Chúng ta cũng xây dựng hai hàm bổ sung khác: một hàm là để tải và giải nén tệp zip/tar, và hàm còn lại để tải tất cả các file từ `DATA_HUB`(chứa phần lớn các bộ dữ liệu được sử dụng trong cuốn sách này) vào bộ nhớ đệm. 
+Bạn có thể sử dụng hàm thứ hai để tải tất cả bộ dữ liệu trong một lần nếu kết nối mạng của bạn chậm.
+
 ```{.python .input  n=11}
 # Saved in the d2l package for later use
 def download_extract(name, folder=None):
@@ -143,10 +145,9 @@ If you want to participate in one of the competitions, you need to register for 
 -->
 
 [Kaggle](https://www.kaggle.com) là một nền tảng phổ biến cho các cuộc thi học máy.
-Nó kết hợp dữ liệu, mã lập trình và người dùng cho cả mục đích hợp tác và thi thố. 
-Mặc dù việc cạnh tranh trên bảng xếp hạng nhiều khi vượt khỏi tầm kiểm soát, ta không thể không nhắc đến sự khách quan mà nền tảng mang lại từ việc so sánh định lượng một cách công bằng và trực tiếp giữa phương pháp của bạn với các phương pháp của đối thủ. 
-Thêm vào đó, bạn còn có thể xem mã nguồn ở các lần nộp bài của (một vài) đối thủ, nghiên cứu phương pháp của họ để biết thêm các kỹ thuật mới.
-Nếu bạn muốn tham gia một cuộc thi, bạn cần đăng ký một tài khoản như trong :numref:`fig_kaggle` (hãy làm ngay đi!).
+Nó kết hợp dữ liệu, mã lập trình và người dùng cho cả mục đích hợp tác và thi thố.
+Mặc dù việc cạnh tranh trên bảng xếp hạng nhiều khi vượt khỏi tầm kiểm soát, ta không thể không nhắc đến tính khách quan của nền tảng này có được từ sự so sánh công bằng định lượng trực tiếp giữa phương pháp của bạn với các phương pháp đến từ đối thủ. 
+Nếu bạn muốn tham gia vào một trong những cuộc thi, bạn cần đăng ký một tài khoản như trong :numref:`fig_kaggle` (làm ngay đi!).
 
 <!--
 ![Kaggle website](../img/kaggle.png)
@@ -160,7 +161,8 @@ Nếu bạn muốn tham gia một cuộc thi, bạn cần đăng ký một tài 
 On the House Prices Prediction page as illustrated in :numref:`fig_house_pricing`, you can find the dataset (under the "Data" tab), submit predictions, see your ranking, etc.,
 The URL is right here:
 -->
-Trên trang Dự Đoán Giá Nhà (_House Prices Prediction_) được mô tả ở :numref:`fig_house_pricing`, bạn có thể tìm được tập dữ liệu (dưới thanh "Data"), nộp kết quả dự đoán và xem thứ hạng của bạn, v.v. 
+
+Trên trang Dự Đoán Giá Nhà (_House Prices Prediction_) được mô tả ở :numref:`fig_house_pricing`, bạn có thể tìm thấy bộ dữ liệu (dưới thanh "Data"), nộp kết quả dự đoán và xem thứ hạng của bạn, v.v. 
 Đường dẫn:
 
 > https://www.kaggle.com/c/house-prices-advanced-regression-technique 
@@ -195,12 +197,12 @@ The "Data" tab on the competition tab has links to download the data.
 -->
 
 Lưu ý rằng dữ liệu của cuộc thi được tách thành tập huấn luyện và tập kiểm tra.
-Mỗi tập dữ liệu bao gồm giá tiền của ngôi nhà và các thuộc tính liên quan bao gồm loại đường phố, năm xây dựng, kiểu mái nhà, tình trạng tầng hầm, v.v.
+Mỗi tập dữ liệu bao gồm giá trị tài sản của ngôi nhà và các thuộc tính liên quan bao gồm loại đường phố, năm xây dựng, loại ngói, tình trạng tầng hầm, v.v.
 Các đặc trưng được biểu diễn bởi nhiều kiểu dữ liệu.
-Ví dụ, năm xây dựng được biểu diễn bởi số nguyên, kiểu mái nhà là đặc trưng hạng mục rời rạc, còn các đặc trưng khác thì được biểu diễn bởi số thực dấu phẩy động (_floating point number_). 
-Và đây là khi ta đối mặt với vấn đề thực tiễn: ở một vài mẫu, dữ liệu bị thiếu và được đơn thuần chú thích là 'na'.
+Ví dụ, năm xây dựng được biểu diễn bởi số nguyên, loại ngói là các lớp đặc trưng riêng biệt, các đặc trưng khác thì được biểu diễn bởi số thực dấu phẩy động (_floating point number_).
+Và đây là khi ta đối mặt với vấn đề thực tiễn: ở một vài mẫu, nhiều dữ liệu bị thiếu và được chú thích đơn giản là 'na'.
 Giá của mỗi căn nhà chỉ được cung cấp trong tập huấn luyện (sau cùng thì đây vẫn là một cuộc thi).
-Bạn có thể chia nhỏ tập huấn luyện để tạo tập kiểm định, tuy nhiên bạn sẽ chỉ biết đưọc chất lượng mô hình trên tập kiểm tra chính thức khi bạn tải lên kết quả dự đoán của mình và nhận điểm sau đó.
+Bạn có thể chia nhỏ tập huấn luyện để tạo tập kiểm định, tuy nhiên bạn sẽ chỉ biết được mô hình của bạn thể hiện như thế nào trên tập kiểm tra chính thức khi bạn tải lên kết quả dự đoán của mình và nhận điểm sau đó.
 Thanh "Data" trên cuộc thi có đường link để tải về bộ dữ liệu.  
 
 <!--
@@ -228,7 +230,7 @@ npx.set_np()
 For convenience, we download and cache the Kaggle housing dataset from the `DATA_URL` website. For the other Kaggle competitions, you may need to download them manually.
 -->
 
-Để thuận tiện, chúng ta sẽ tải và lưu tập dữ liệu giá nhà Kaggle từ trang web `DATA_URL`. Với những cuộc thi Kaggle khác, có thể bạn sẽ phải tải dữ liệu về theo cách thủ công.
+Để thuận tiện, chúng ta sẽ tải và lưu bộ dữ liệu giá nhà Kaggle từ trang web `DATA_URL`. Với những cuộc thi Kaggle khác, bạn có thể cần tải dữ liệu về theo cách thủ công.  
 
 ```{.python .input}
 # Saved in the d2l package for later use
@@ -285,7 +287,7 @@ Hence we remove it from the dataset before feeding the data into the network.
 Có thể thấy với mỗi mẫu, đặc trưng đầu tiên là ID.
 Điều này giúp mô hình xác định được từng mẫu. 
 Mặc dù việc này khá thuận tiện, nó không mang bất kỳ thông tin nào cho mục đích dự đoán. 
-Do đó chúng ta sẽ lược bỏ nó ra khỏi tập dữ liệu trước khi đưa vào mạng nơ-ron.
+Do đó chúng ta sẽ lược bỏ nó ra khỏi bộ dữ liệu trước khi đưa vào mạng nơ-ron. 
 
 ```{.python .input  n=30}
 all_features = pd.concat((train_data.iloc[:, 1:-1], test_data.iloc[:, 1:]))
